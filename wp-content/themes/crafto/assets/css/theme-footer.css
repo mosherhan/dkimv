@@ -1,0 +1,117 @@
+/* ===================================
+	Footer
+====================================== */
+footer.footer-main-wrapper {
+	position: relative;
+	clear: both;
+}
+.newsletter-style-3 input {
+	padding-left: 15px;
+}
+footer .elementor-widget .elementor-icon-list-item .elementor-icon-list-icon {
+	line-height: 0;
+}
+footer .crafto-simple-menu li .menu-item-label {
+	margin-top: 3px;
+}
+
+/* Footer Sticky */
+.footer-sticky,
+footer.footer-main-wrapper.footer-sticky {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 0;
+}
+body.left-menu-modern .footer-sticky .edit-crafto-section {
+	left: 75px;
+}
+
+/* Footer Overlap */
+.footer-overlap {
+	position: fixed !important;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+}
+
+/* Menu */
+footer .elementor-widget-crafto-custom-menu ul li a {
+	margin: 0;
+}
+footer .menu li a {
+	padding: 0;
+	margin: 0 0 2px 0;
+}
+footer .elementor-menu-view-horizontal .crafto-simple-menu li {
+	margin: 0;
+}
+footer .elementor-menu-view-horizontal .crafto-simple-menu li:first-child a {
+	margin-left: 0 !important;
+	padding-left: 0 !important;
+}
+footer .elementor-menu-view-horizontal .crafto-simple-menu li:last-child a {
+	margin-right: 0 !important;
+	padding-right: 0 !important;
+}
+footer .elementor-menu-view-horizontal .simple-navigation-menu li a,
+footer .elementor-menu-view-horizontal .crafto-simple-menu li a {
+	padding: .5rem 1rem;
+	margin: 0;
+}
+footer .elementor-menu-view-horizontal .simple-navigation-menu li a .submenu-icon-content,
+footer .elementor-menu-view-horizontal .crafto-simple-menu li a .submenu-icon-content {
+	line-height: normal;
+}
+footer .newsletter-style-1 form button[type="submit"] i {
+	line-height: 1.5;
+}
+
+/* Footer Default */
+.footer-default-wrapper {
+	background-color: #fff;
+	border-top: 1px solid #E4E4E4;
+	padding: 35px 0;
+}
+.footer-default-wrapper .site-title a {
+	font-weight: 500;
+	font-size: 16px;
+	color: var( --e-global-color-secondary, #232323 );
+}
+.footer-default-wrapper .copyright-text {
+	font-size: 14px;
+}
+.footer-default-wrapper .copyright-text a {
+	text-decoration: underline;
+	color: var( --e-global-color-secondary, #232323 );
+}
+.footer-default-wrapper .copyright-text a:hover {
+	text-decoration: none;
+}
+
+/* Responsive CSS Here */
+@media (max-width: 991px) {
+	.footer-default-wrapper {
+		padding: 25px 0;
+	}
+	.footer-sticky {
+		position: relative !important;
+	}
+	body.left-menu-modern .footer-sticky .edit-crafto-section {
+		left: 15px;
+	}
+}
+
+@media (max-width: 767px) {
+	footer .elementor-menu-view-horizontal .simple-navigation-menu li a,
+	footer .elementor-menu-view-horizontal .crafto-simple-menu li a {
+		padding-left: .8rem;
+		padding-right: .8rem;
+	}
+	.footer-navbar li .nav-link {
+		margin-left: 0.8rem;
+		margin-right: 0.8rem;
+	}
+}

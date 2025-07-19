@@ -1,0 +1,475 @@
+/* ===================================
+	Contact Form
+====================================== */
+div.wpcf7 .ajax-loader {
+	top: -4px;
+	display: none;
+	background-color: transparent;
+	opacity: 1;
+	width: auto;
+	height: auto;
+}
+div.wpcf7 .ajax-loader:after {
+	margin: 0 !important;
+	background: none;
+	content: "" !important;
+	position: absolute;
+	left: calc(50% - 10px) !important;
+	top: calc(50% - 10px) !important;
+	width: 20px !important;
+	height: 20px !important;
+	opacity: 1 !important;
+	right: inherit !important;
+	z-index: 9;
+	text-align: center;
+	border: 2px solid rgba(23, 23, 23, 0.2);
+	border-top-color: rgba(23, 23, 23, 0.7);
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+}
+div.wpcf7 .ajax-loader::before {
+	display: none;
+}
+div.wpcf7 .ajax-loader.is-active,
+div.wpcf7 form.submitting .ajax-loader {
+	display: inline-block;
+	visibility: visible;
+}
+.contact-form-wrapper .wpcf7-form-control-wrap {
+	display: block;
+	position: relative;
+}
+.contact-form-wrapper .wpcf7-form-control-wrap .wpcf7-form-control,
+.contact-form-wrapper .wpcf7-form-control-wrap .wpcf7-list-item,
+.contact-form-wrapper .wpcf7-form-control-wrap textarea {
+	display: block;
+}
+.contact-form-wrapper .wpcf7-form-control-wrap input[type='date'], 
+.contact-form-wrapper .wpcf7-form-control-wrap input[type='time'] {
+	-webkit-appearance: none;
+	background-color: #fff;
+}
+.wpcf7-form-control-wrap .wpcf7-not-valid-tip {
+	display: none;
+}
+.contact-form-wrapper .contact-wpcf7-spinner,
+.contact-form-wrapper .contact-wpcf7-spinner p {
+	display: inline-flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+.contact-form-wrapper .contact-wpcf7-spinner p {
+	width: 100%;
+}
+.contact-modern-only-icon .contact-wpcf7-spinner i,
+.contact-modern-only-icon .contact-wpcf7-spinner svg {
+	position: absolute;
+	font-size: 18px;
+	pointer-events: none;
+}
+.contact-modern-only-icon .contact-wpcf7-spinner svg {
+	height: auto;
+	width: 1em
+}
+.contact-modern-only-icon .wpcf7-submit {
+	text-indent: -9999px;
+}
+.contact-form-wrapper .crafto-button-wrapper p {
+	margin: 0;
+}
+.wpcf7-form .contact-wpcf7-spinner .wpcf7-spinner {
+	position: absolute;
+	margin: 0;
+}
+.wpcf7-form .contact-wpcf7-spinner .wpcf7-submit {
+	margin: 0 !important;
+}
+.wpcf7-form .wpcf7-submit:focus {
+	background-color: transparent;
+}
+.submitting .contact-wpcf7-spinner input.wpcf7-submit {
+	opacity: .5;
+}
+.wpcf7-form .wpcf7-spinner {
+	margin: 0 20px 0;
+	background-color: transparent;
+	border: 3px solid;
+	border-bottom-color: #232323;
+	border-radius: 50%;
+	display: inline-block;
+	box-sizing: border-box;
+	flex-shrink: 0;
+	animation: rotation 1s linear infinite;
+	color: #a7a7a7;
+}
+.wpcf7-form .wpcf7-spinner::before {
+	display: none;
+}
+
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+} 
+
+.contact-form-wrapper .crafto-button-wrapper input {
+	margin-bottom: 0;
+}
+.contact-form-wrapper .crafto-button-wrapper input.wpcf7-submit {
+	transition: all .3s;
+	-webkit-appearance: button;
+}
+input[type="submit"] {
+	width: auto;
+	cursor: pointer;
+}
+.contact-form-wrapper .contact-form-text {
+	display: inline-block;
+	width: 85%;
+	font-size: 14px;
+	line-height: 24px;
+}
+.contact-form-wrapper .contact-form-text.terms-condition-box {
+	position: relative;
+}
+.contact-form-wrapper .contact-form-text.terms-condition-box label {
+	display: block;
+}
+.contact-form-wrapper .contact-form-text.terms-condition-box input[type="checkbox"] {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 4px;
+	left: 0;
+}
+.contact-form-wrapper .contact-form-text.terms-condition-box input[type="checkbox"]:checked + .box:after,
+.contact-form-wrapper .contact-form-text.terms-condition-box input[type="checkbox"]:checked + .wpcf7-list-item-label:after {
+	display: block;
+}
+.contact-form-wrapper .contact-form-text.terms-condition-box input[type="checkbox"].is-invalid + .box:before,
+.contact-form-wrapper .contact-form-text.terms-condition-box input[type="checkbox"].is-invalid + .wpcf7-list-item-label:before {
+	border-color: #dc3545;
+}
+.contact-form-wrapper .contact-form-text.terms-condition-box .box,
+.contact-form-wrapper .contact-form-text.terms-condition-box .wpcf7-list-item-label {
+	position: relative;
+	padding-left: 30px;
+	cursor: pointer;
+	display: inline-block;
+}
+.contact-form-wrapper .contact-form-text.terms-condition-box .box:before,
+.contact-form-wrapper .contact-form-text.terms-condition-box .wpcf7-list-item-label:before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+	border: 1px solid #e4e4e4;
+	position: absolute;
+	top: 3px;
+	left: 0;
+	border-radius: 4px;
+}
+.contact-form-wrapper .contact-form-text.terms-condition-box .box:after,
+.contact-form-wrapper .contact-form-text.terms-condition-box .wpcf7-list-item-label:after {
+	position: absolute;
+	left: 7px;
+	top: 7px;
+	content: "";
+	width: 6px;
+	height: 10px;
+	display: none;
+	border: solid #1e3238;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}
+.contact-form-wrapper .contact-form-text .wpcf7-list-item-label {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 5px;
+}
+.contact-form-wrapper .contact-form-text .wpcf7-list-item-label a {
+	text-decoration: underline;
+}
+.contact-form-wrapper .contact-form-text .wpcf7-list-item-label a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+.contact-form-wrapper .contact-form-text .wpcf7-list-item {
+	margin: 0;
+}
+.contact-form-text {
+	margin-bottom: 0 !important;
+}
+input[type="checkbox"],
+input[type="radio"] {
+	padding: 0;
+	width: auto;
+	margin: 0 5px 0 0;
+	position: relative;
+	top: 2px;
+	float: none;
+}
+.wpcf7 form.init .wpcf7-response-output,
+.wpcf7 form.resetting .wpcf7-response-output,
+.wpcf7 form.submitting .wpcf7-response-output {
+	display: none;
+}
+.contact-form-wrapper .wpcf7 form .wpcf7-response-output {
+	font-size: 17px; 
+	text-align: center;
+	margin: 20px 0;
+	border-radius: 4px;
+	line-height: 22px;
+	padding: 20px 30px 23px 30px; 
+}
+.contact-form-wrapper .wpcf7 form.invalid .wpcf7-response-output,
+.contact-form-wrapper .wpcf7 form.unaccepted .wpcf7-response-output {
+	color: #e2ad4b;
+	background-color: #fcf8e3;
+	border: 0 solid #faebcc;
+}
+.contact-form-wrapper .wpcf7 form.failed .wpcf7-response-output,
+.contact-form-wrapper .wpcf7 form.aborted .wpcf7-response-output,
+.contact-form-wrapper .wpcf7 form.failed .wpcf7-response-output,
+.contact-form-wrapper .wpcf7 form.aborted .wpcf7-response-output {
+	color: #e65656;
+	background-color: #fbf1f1;
+	border: 0 solid #efe1e3;
+}
+.contact-form-wrapper .wpcf7 form.sent .wpcf7-response-output {
+	color: #54b783;
+	background-color: #f1fbec;
+	border: 0 solid #cce8b3;
+}
+.contact-form-wrapper .wpcf7 .wpcf7-submit:disabled {
+	opacity: .6;
+}
+.screen-reader-response ul li {
+	color: #ff0202;
+}
+.screen-reader-response p {
+	margin-bottom: 10px;
+}
+.wpcf7-not-valid,
+.inputerror {
+	border-color: #ff0202 !important;
+}
+.input-wrapper {
+	position: relative;
+	margin-bottom: 20px;
+}
+.input-wrapper .select-arrow {
+	position: relative;
+}
+.input-wrapper .select-arrow select {
+	appearance: none;
+}
+.input-wrapper .select-arrow:after {
+	content: "\e842";
+	font-family: feather !important;
+	right: 20px;
+	top: 50%;
+	height: 34px;
+	position: absolute;
+	pointer-events: none;
+	font-size: 22px;
+	margin-top: -15px;
+}
+.input-wrapper .select-arrow.right:after {
+	right: 10px;
+	font-size: 17px;
+}
+.input-wrapper>p,
+.crafto-button-wrapper>p {
+	margin-bottom: 0;
+}
+.input-wrapper i,
+.input-wrapper svg {
+	position: absolute;
+	left: 25px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+.input-wrapper.textarea-wrapper i,
+.input-wrapper.textarea-wrapper svg {
+	top: 15px;
+	transform: none;
+}
+
+/* Crafto Form Style 01 */
+.crafto-form-style-1 label {
+	display: block;
+}
+
+/* Crafto Form Style 02 */
+.crafto-form-style-2 input,
+.elementor-widget .crafto-form-style-2 select,
+.crafto-form-style-2 textarea {
+	padding-left: 60px;
+}
+.crafto-form-style-2 .input-wrapper.textarea-wrapper i {
+	top: 14px;
+}
+.crafto-form-style-2 .input-wrapper.textarea-wrapper svg{
+	top: 20px;
+}
+
+/* Crafto Form Style 03 */
+.crafto-form-style-3 .input-wrapper i {
+	position: absolute;
+	left: 25px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+.crafto-form-style-3 .wpcf7-form-control-wrap {
+	display: block;
+	position: relative;
+}
+.crafto-form-style-3 input:not(.wpcf7-submit){
+	border-radius: 6px 6px 6px 6px;
+	padding: 12px 25px 12px 55px;
+}
+.crafto-form-style-3 .input-wrapper.textarea-wrapper i {
+	top: 15px;
+	transform: translateY(0);
+}
+.crafto-form-style-3 input.wpcf7-submit,
+.crafto-form-style-3 .crafto-button-wrapper input.wpcf7-submit {
+	color: #fff;
+}
+.crafto-form-style-3 .form-textarea {
+	position: relative;
+}
+
+/* Crafto Form Style 04 */
+.crafto-form-style-4 input[type="submit"] {
+	width: 100%;
+}
+
+/* Crafto Form Style 05 */
+.crafto-form-style-5 .input-wrapper i,
+.crafto-form-style-5 .input-wrapper svg {
+	left: inherit;
+	right: 5px;
+}
+.crafto-form-style-5 .input-wrapper input,
+.crafto-form-style-5 .input-wrapper textarea {
+	margin-bottom: 0;
+}
+.crafto-form-style-5 p {
+	margin-bottom: 0;
+}
+.crafto-form-style-5 .form-textarea .input-wrapper i,
+.crafto-form-style-5 .form-textarea .input-wrapper svg {
+	top: 30px;
+}
+
+/* Crafto Form Style 06 */
+.crafto-form-style-6 .input-wrapper i,
+.crafto-form-style-6 .input-wrapper svg {
+	font-size: 24px;
+	left: inherit;
+	right: 5px;
+}
+.crafto-form-style-6 .input-wrapper svg {
+	width: 1em;
+	height: auto;
+}
+.crafto-form-style-6 .wpcf7-submit {
+	width: 100%;
+}
+.crafto-form-style-6 .crafto-button-wrapper p {
+	margin-bottom: 0;
+}
+
+/* Crafto Form Style 07 */
+.crafto-form-style-7 input,
+.crafto-form-style-7 textarea,
+.crafto-form-style-7 select {
+	background-color: transparent;
+	font-weight: 300;
+	padding: 14px 28px 14px 35px;
+	border-radius: 100px;
+	font-size: 16px;
+}
+.crafto-form-style-7 .crafto-button-wrapper {
+	margin-bottom: 20px;
+}
+.crafto-form-style-7 .crafto-button-wrapper .wpcf7-submit,
+.crafto-form-style-7 .crafto-button-wrapper .wpcf7-submit:hover {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+	height: 60px;
+	width: 60px;
+	background-color: #fff;
+	color: #4c46c0;
+	padding: 0;
+	text-align: center;
+	border-color: #fff;
+	box-shadow: none;
+	border-radius: 50px;
+	transform: translateY(0);
+}
+.crafto-form-style-7 .crafto-button-wrapper .wpcf7-submit i {
+	font-size: 18px;
+}
+.crafto-form-style-7 .crafto-button-wrapper .wpcf7-submit:hover {
+	color: var( --e-global-color-secondary, #232323 );
+}
+
+/* Promo Popup */
+.crafto-promo-popup-wrap .contact-form-wrapper .crafto-form-style-3 > div p {
+	margin-bottom: 0;
+}
+.crafto-promo-popup-wrap .contact-form-wrapper .crafto-form-style-3 .wpcf7-checkbox {
+	text-align: center;
+}
+.crafto-promo-popup-wrap .contact-form-wrapper .crafto-form-style-3 .wpcf7-checkbox label {
+	font-size: 15px;
+	margin-top: 15px;
+	display: block;
+}
+.crafto-promo-popup-wrap .contact-form-wrapper .crafto-form-style-3 .wpcf7-checkbox label input[type="checkbox"],
+.crafto-promo-popup-wrap .contact-form-wrapper .crafto-form-style-3 .wpcf7-checkbox label input[type="radio"] {
+	top: 1px;
+	float: none;
+}
+.crafto-promo-popup-wrap .contact-form-wrapper .crafto-form-style-3 .wpcf7-checkbox .wpcf7-list-item {
+	margin: 0;
+}
+
+/* Responsive CSS Here */
+@media (max-width: 767px) {
+	.contact-form-wrapper .crafto-button-wrapper.contact-simple {
+		text-align: left;
+	}
+	.contact-form-wrapper .contact-form-text {
+		text-align: center;
+	}
+	.crafto-form-style-7 .crafto-button-wrapper .wpcf7-submit,
+	.crafto-form-style-7 .crafto-button-wrapper .wpcf7-submit:hover {
+		width: 100%;
+	}
+	.crafto-form-style-7 input,
+	.crafto-form-style-7 textarea,
+	.crafto-form-style-7 select {
+		margin-bottom: 25px;
+	}
+	.crafto-form-style-7 .crafto-button-wrapper {
+		margin-bottom: 0;
+	}
+	.crafto-form-style-7 .crafto-button-wrapper.contact-modern-only-icon .contact-wpcf7-spinner {
+		width: 100%;
+	}
+	.contact-form-wrapper .wpcf7 form .wpcf7-response-output {
+		padding: 15px 20px 18px; 
+	}
+}

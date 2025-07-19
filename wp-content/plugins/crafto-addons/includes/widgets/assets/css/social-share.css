@@ -1,0 +1,486 @@
+/* ===================================
+	Social Share
+====================================== */
+/* Social Share Default CSS Here */
+.social-share-wrapper ul li a.social-sharing-icon {
+	margin-right: 10px;
+	color: var( --e-global-color-secondary, #232323 );
+	background-color: transparent;
+	padding: 0;
+	font-size: 14px;
+	width: auto;
+	height: auto;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+.elementor-shape-square .social-share-wrapper ul li a,
+.elementor-shape-circle .social-share-wrapper ul li a {
+	justify-content: center;
+}
+.social-share-wrapper ul li a.social-sharing-icon i {
+	width: auto;
+	height: auto;
+	display: inline-block;
+	vertical-align: middle;
+	transition: all 0.3s ease-in-out;
+}
+.social-share-wrapper ul li a.social-sharing-icon i:before {
+	position: static;
+}
+.social-share-wrapper ul li a.elementor-social-icon i {
+	color: var( --e-global-color-secondary, #232323 );
+	transition: all 0.3s ease-in-out;
+}
+.social-share-wrapper ul li a.social-sharing-icon .social-icon-text {
+	margin-left: 5px;
+	transition: all 0.3s ease-in-out;
+}
+.social-share-wrapper ul li a.elementor-social-icon:hover i,
+.social-share-wrapper ul li a.elementor-social-icon:hover {
+	color: rgba(0, 0, 0, .6);
+}
+.default.social-share-wrapper ul li a.social-sharing-icon {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.default.social-share-wrapper ul li:last-child a.social-sharing-icon {
+	margin-right: 0;
+}
+.default.social-share-wrapper ul li a.social-sharing-icon span,
+.default.social-share-wrapper ul li a.social-sharing-icon {
+	transition: 0.3s cubic-bezier(0.12, 0, 0.39, 0);
+	vertical-align: middle;
+}
+.social-share-wrapper ul li a.elementor-social-icon {
+	background-color: transparent;
+}
+.elementor-shape-square .social-share-wrapper.social-share-default ul li a {
+	background-color: var( --e-global-color-secondary, #232323 );
+	color: #fff;
+	margin: 0 3px;
+	width: 35px;
+	height: 35px;
+}
+.elementor-shape-square .social-share-wrapper.social-share-default ul li:first-child a,
+.elementor-shape-circle .social-share-wrapper.social-share-default ul li:first-child a {
+	margin-left: 0;
+}
+.elementor-shape-square .social-share-wrapper.social-share-default ul li:last-child a,
+.elementor-shape-circle .social-share-wrapper.social-share-default ul li:last-child a {
+	margin-right: 0;
+}
+.elementor-shape-circle .social-share-wrapper.social-share-default ul li a {
+	background-color: var( --e-global-color-secondary, #232323 );
+	color: #fff;
+	margin: 0 3px;
+	width: 35px;
+	height: 35px;
+	border-radius: 100%;
+}
+
+/* Social Share Sticky */
+.social-share-wrapper.social-sticky-icon {
+	position: fixed;
+	left: 0;
+	top: 50%;
+	transition: all 0.3s ease-in-out;
+	transform: rotate(0) translate(0, -50%);
+	transform-origin: 0 50%;
+	z-index: 1;
+	opacity: 1 !important;
+}
+.elementor-icon-view-vertical .social-share-wrapper.social-sticky-icon li {
+	text-align: center;
+	display: block;
+}
+.social-share-wrapper.social-sticky-icon.sticky-highlight li a {
+	color: var( --e-global-color-secondary, #232323 );
+}
+.elementor-icon-view-vertical .social-sticky-icon.social-share-wrapper li a,
+.elementor-icon-view-vertical.elementor-shape-rounded .social-sticky-icon.social-share-wrapper.social-share-default li a {
+	margin: 5px 5px 5px 15px;
+}
+.elementor-icon-view-vertical .social-sticky-icon.social-share-wrapper li:last-child a,
+.elementor-icon-view-vertical.elementor-shape-rounded .social-sticky-icon.social-share-wrapper.social-share-default li:last-child a {
+	margin-right: 0;
+}
+.elementor-icon-view-vertical.elementor-shape-square .social-share-wrapper.social-share-default ul li a,
+.elementor-icon-view-vertical.elementor-shape-circle .social-share-wrapper.social-share-default ul li a,
+.elementor-icon-view-vertical.elementor-shape-circle .social-share-wrapper.social-share-default ul li a {
+	margin: 5px 0;
+}
+.elementor-icon-view-vertical.elementor-shape-rounded .social-share-wrapper.social-share-default ul li a,
+.elementor-icon-view-vertical .social-share-wrapper li a {
+	margin: 10px 5px;
+}
+.social-share-wrapper.social-sticky-icon.social-icon-position-right {
+	left: inherit;
+	right: 0;
+}
+
+/* Social Share Style 01 */
+.social-share-style-1.social-share-wrapper ul li,
+.social-share-style-1 ul li {
+	display: inline-block;
+}
+.social-share-style-1.social-share-wrapper ul li a.social-sharing-icon,
+.social-share-style-1 ul li a {
+	position: relative;
+	border-radius: 100%;
+	color: var( --e-global-color-secondary, #232323 );
+	margin-right: 8px;
+	width: 50px;
+	height: 50px;
+	z-index: 1;
+	justify-content: center;
+}
+.social-share-style-1.social-share-wrapper ul li a.social-sharing-icon:hover,
+.social-share-style-1.social-share-wrapper ul li a.social-sharing-icon:hover i,
+.social-share-style-1 ul li a:hover,
+.social-share-style-1 ul li a:hover i {
+	color: #fff;
+}
+.social-share-style-1.social-share-wrapper ul li a.social-sharing-icon i,
+.social-share-style-1 ul li a i {
+	position: relative;
+	transition: 0.4s cubic-bezier(0.12, 0, 0.39, 0);
+}
+.social-share-style-1.social-share-wrapper ul li a.social-sharing-icon span {
+	background-color: var( --e-global-color-secondary, #232323 );
+	border-radius: 50px 50px 50px 50px;
+	width: 0;
+	height: 0;
+	left: 50%;
+	top: 50%;
+	margin: 0;
+	display: block;
+	position: absolute;
+	transition: 0.4s cubic-bezier(0.12, 0, 0.39, 0);
+	z-index: -1;
+}
+.social-share-style-1.social-share-wrapper ul li a.social-sharing-icon:hover span {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+/* Social Share Style 02 */
+.social-share-style-2.social-share-wrapper ul li {
+	vertical-align: middle;
+}
+.social-share-style-2.social-share-wrapper ul li a.social-sharing-icon {
+	color: var( --e-global-color-secondary, #232323 );
+	height: auto;
+	width: auto;
+	padding: 0;
+	margin-right: 25px;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+}
+.social-share-style-2.social-share-wrapper ul li:first-child a.social-sharing-icon,
+.elementor-304 .elementor-element.elementor-element-717f862 .social-share-style-2.social-share-wrapper ul li:first-child a.social-sharing-icon {
+	margin-left: 0;
+}
+.social-share-style-2.social-share-wrapper ul li:last-child a.social-sharing-icon,
+.elementor-304 .elementor-element.elementor-element-717f862 .social-share-style-2.social-share-wrapper ul li:last-child a.social-sharing-icon {
+	margin-right: 0;
+}
+.social-share-style-2.social-share-wrapper ul li a.social-sharing-icon i {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition-duration: 0.3s;
+}
+.social-share-style-2.social-share-wrapper ul li a.social-sharing-icon:hover i {
+	top: 0;
+	transition-duration: 0.3s;
+}
+.social-share-style-2.social-share-wrapper a>span {
+	line-height: inherit;
+	font-weight: 500;
+	top: 0;
+	position: relative;
+}
+.social-share-style-2.social-share-wrapper ul li a.social-sharing-icon>span,
+.social-share-style-2.social-share-wrapper ul li a.social-sharing-icon i {
+	transition: 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+.social-share-style-2.social-share-wrapper a:hover>span {
+	top: -50px;
+	transition: 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+.social-share-style-2.social-share-wrapper .social-sharing-icon i:before {
+	position: initial;
+	left: initial;
+	transform: initial;
+}
+.elementor-icon-view-vertical .social-share-wrapper.social-share-style-2 ul li a.social-sharing-icon .social-icon-text {
+	margin-left: 0;
+}
+.elementor-icon-view-vertical .social-share-style-2.social-share-wrapper ul li a.social-sharing-icon {
+	margin-right: 0;
+	margin-left: 0;
+}
+.elementor-icon-view-vertical .social-share-style-2.social-share-wrapper ul li {
+	display: flex;
+}
+.elementor-icon-view-vertical .social-share-style-2.social-share-wrapper ul li a.elementor-icon {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/* Social Share Style 03 */
+.social-share-style-3.social-share-wrapper ul li a.social-sharing-icon {
+	color: var( --e-global-color-secondary, #232323 );
+	position: relative;
+	margin-right: 15px;
+	width: 50px;
+	height: 50px;
+	border: 1px solid rgba(35,35,35,.3);
+	border-radius: 50px;
+	font-size: 18px;
+	justify-content: center;
+	z-index: 0;
+}
+.social-share-style-3.social-share-wrapper ul li a.social-sharing-icon:hover i {
+	color: #fff;
+}
+.social-share-style-3.social-share-wrapper ul li a.social-sharing-icon i {
+	position: relative;
+	transition: .3s cubic-bezier(.12,0,.39,0);
+}
+.social-share-style-3.social-share-wrapper ul li a.social-sharing-icon:after {
+	content: '';
+	display: block;
+	border-radius: 100%;
+	height: 100%;
+	width: 100%;
+	top: -1px;
+	left: -1px;
+	padding: 1px;
+	box-sizing: content-box;
+	margin: 0;
+	position: absolute;
+	transform: scale(1.2);
+	opacity: 0;
+	transition: .5s cubic-bezier(.12,0,.39,0);
+	z-index: -1;
+}
+.social-share-style-3.social-share-wrapper ul li a.social-sharing-icon:hover:after {
+	transform: scale(1);
+	opacity: 1;
+	background-color: var( --e-global-color-secondary, #232323 );
+}
+.social-share-style-3.social-share-wrapper ul li a.social-sharing-icon:hover {
+	background-color: transparent !important;
+}
+.elementor-icon-view-vertical .social-share-style-3.social-share-wrapper li a,
+.elementor-icon-view-vertical .social-share-style-3.social-share-wrapper.social-sticky-icon li a {
+	margin: 7px;
+}
+
+/* Social Share Style 04 */
+.social-share-style-4.social-share-wrapper ul li a.social-sharing-icon {
+	border-radius: 0;
+	position: relative;
+	color: var( --e-global-color-secondary, #232323 );
+	z-index: 1;
+	overflow: hidden;
+	width: 60px;
+	height: 60px;
+	justify-content: center;
+}
+.social-share-style-4.social-share-wrapper ul li a.social-sharing-icon:hover,
+.social-share-style-4.social-share-wrapper ul li a.social-sharing-icon:hover i {
+	color: #fff;
+}
+.social-share-style-4.social-share-wrapper ul li a.social-sharing-icon span {
+	position: absolute;
+	top: -100%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	transition: all .5s cubic-bezier(0, 0, .2, 1);
+	background-color: var( --e-global-color-secondary, #232323 );
+}
+.social-share-style-4.social-share-wrapper ul li a.social-sharing-icon:hover span {
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+.social-share-style-4.social-share-wrapper ul li a.social-sharing-icon i {
+	position: relative;
+	top: -1px;
+	transition: all 0.2s;
+}
+
+/* Social Share Style 05 */
+.social-share-style-5.social-share-wrapper ul {
+	flex-wrap: wrap;
+	display: inline-flex;
+}
+.social-share-style-5.social-share-wrapper ul li {
+	border: 1px solid var( --e-global-color-secondary, #232323 );
+	padding: 5px 20px 5px;
+	margin: 0;
+}
+.elementor-widget-crafto-social-share:not(.elementor-icon-view-vertical) .social-share-style-5.social-share-wrapper ul li {
+	text-align: center;
+}
+.social-share-style-5.social-share-wrapper ul li a,
+.social-sharing-icon-view-vertical .social-share-wrapper.social-share-style-5 ul li a {
+	margin: 0;
+}
+.social-share-style-5.social-share-wrapper ul li .social-icon-text {
+	margin-left: 10px;
+}
+.social-share-style-5.social-share-wrapper ul li a.social-sharing-icon i
+.social-share-style-5.social-share-wrapper ul li .social-icon-text {
+	position: relative;
+	transition: all 0.3s;
+}
+.social-share-style-5.social-share-wrapper ul li a.social-sharing-icon:hover,
+.social-share-style-5.social-share-wrapper ul li a.social-sharing-icon:hover i {
+	color: rgba(0, 0, 0, .6);
+}
+.elementor-icon-view-vertical .social-share-wrapper.social-share-style-5 ul li {
+	width: 100%;
+}
+
+/* Icon Size */
+.social-share-wrapper ul.extra-small-icon li a.social-sharing-icon {
+	font-size: 14px;
+}
+.social-share-wrapper ul.small-icon li a.social-sharing-icon {
+	font-size: 18px;
+}
+.social-share-wrapper ul.medium-icon li a.social-sharing-icon {
+	font-size: 20px;
+}
+.social-share-wrapper ul.large-icon li a.social-sharing-icon {
+	font-size: 24px;
+}
+.social-share-wrapper ul.extra-large-icon li a.social-sharing-icon {
+	font-size: 30px;
+}
+.social-share-wrapper .icon-social-very-small {
+	font-size: 12px;
+}
+.social-share-wrapper .icon-social-small {
+	font-size: 14px;
+}
+.social-share-wrapper .icon-social-medium {
+	font-size: 16px;
+}
+.social-share-wrapper .icon-social-large {
+	font-size: 20px;
+}
+.social-share-wrapper .icon-social-extra-large {
+	font-size: 24px;
+}
+.social-share-wrapper .icon-social-very-small a i,
+.social-share-wrapper .icon-social-small a i,
+.social-share-wrapper .icon-social-medium a i{
+	margin: 0 8px;
+	vertical-align: middle;
+}
+.social-share-wrapper .icon-social-large a i {
+	margin: 0 4px;
+	vertical-align: middle;
+}
+.social-share-wrapper .extra-small-icon a {
+	font-size: 14px;
+	width: 30px;
+	height: 30px;
+}
+.social-share-wrapper .small-icon a {
+	font-size: 18px;
+	width: 40px;
+	height: 40px;
+}
+.social-share-wrapper .medium-icon a {
+	font-size: 20px;
+	width: 50px;
+	height: 50px;
+}
+.social-share-wrapper .large-icon a {
+	font-size: 24px;
+	width: 60px;
+	height: 60px;
+}
+.social-share-wrapper .social-share-wrapper .extra-large-icon a {
+	font-size: 30px;
+	width: 70px;
+	height: 70px;
+}
+.social-share-wrapper .default-icon,
+.social-share-wrapper .extra-small-icon,
+.social-share-wrapper .small-icon,
+.social-share-wrapper .medium-icon,
+.social-share-wrapper .large-icon,
+.social-share-wrapper .extra-large-icon,
+.default.social-share-wrapper ul,
+.social-share-wrapper ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.social-share-wrapper .extra-small-icon li,
+.social-share-wrapper .small-icon li,
+.social-share-wrapper .medium-icon li,
+.social-share-wrapper .large-icon li,
+.social-share-wrapper .extra-large-icon li,
+.social-share-wrapper .default-icon li,
+.default.social-share-wrapper ul li,
+.social-share-wrapper ul li {
+	display: inline-block;
+}
+.social-share-wrapper .extra-small-icon li:last-child,
+.social-share-wrapper .small-icon li:last-child,
+.social-share-wrapper .medium-icon li:last-child,
+.social-share-wrapper .large-icon li:last-child,
+.social-share-wrapper .extra-large-icon li:last-child,
+.default.social-share-wrapper li:last-child,
+.social-share-wrapper li:last-child {
+	margin-right: 0;
+}
+.social-share-wrapper .extra-small-icon li:first-child,
+.social-share-wrapper .small-icon li:first-child,
+.social-share-wrapper .medium-icon li:first-child,
+.social-share-wrapper .large-icon li:first-child,
+.social-share-wrapper .extra-large-icon li:first-child,
+.default.social-share-wrapper li:first-child,
+.social-share-wrapper li:first-child {
+	margin-left: 0;
+}
+.default.social-share-wrapper .small-icon li {
+	margin: 0 5px;
+}
+.default.social-share-wrapper .small-icon li:last-child {
+	margin-right: 0;
+}
+.default.social-share-wrapper .small-icon li:first-child {
+	margin-left: 0;
+}
+
+/* Elementor Icon Vertical */
+.elementor-icon-view-vertical .social-share-wrapper ul li {
+	display: block;
+}
+
+/* Responsive CSS Here */
+@media (max-width: 575px) {
+	.social-share-wrapper ul.large-icon li a.social-sharing-icon {
+		font-size: 22px;
+	}
+}

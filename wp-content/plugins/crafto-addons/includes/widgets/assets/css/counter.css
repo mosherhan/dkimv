@@ -1,0 +1,331 @@
+/* ===================================
+	Counter
+====================================== */
+.vertical-counter-number {
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+}
+.vertical-counter-number ul {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	transform: translateY(0);
+	list-style: none;
+}
+.single-post .blog-details-text .vertical-counter-number ul {
+	padding-left: 0;
+}
+.vertical-counter-wrapper:not(.vertical-counter-style-4,
+.vertical-counter-style-5) .vertical-counter {
+	color: var( --e-global-color-secondary, #232323 );
+	font-size: 2.85rem;
+	line-height: 3.1rem;
+	letter-spacing: -2px;
+}
+.vertical-counter-wrapper .title {
+	display: block;
+	margin-top: 5px;
+}
+.vertical-counter-wrapper:not(.vertical-counter-style-4,
+.vertical-counter-style-5) .number-suffix,
+.vertical-counter-wrapper:not(.vertical-counter-style-4,
+.vertical-counter-style-5) .number-prefix {
+	color: #e6994e;
+	font-size: 30px;
+	line-height: 24px;
+	font-weight: 500;
+	margin-left: 3px;
+	vertical-align: top;
+}
+.elementor-counter:not(.vertical-counter-style-4,
+.vertical-counter-style-5) .elementor-counter-number-suffix {
+	margin: -1px 0 0 -3px;
+}
+
+/* Vertical Counter Style 01 */
+.vertical-counter-style-1 {
+	display: inline-flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.vertical-counter-style-1 .verticle-counter-icon {
+	order: 1;
+}
+.vertical-counter-style-1 .number-prefix {
+	order: 2;
+}
+.vertical-counter-style-1 .vertical-counter {
+	order: 3;
+}
+.vertical-counter-style-1 .number-suffix {
+	order: 4;
+}
+.vertical-counter-style-1 .title {
+	order: 5;
+	width: 100%;
+}
+.vertical-counter-style-1 .verticle-counter-icon svg {
+	width: 1em;
+	height: auto;
+}
+
+/* Vertical Counter Style 02 */
+.vertical-counter-style-2 .number-wrap {
+	position: relative;
+	display: inline-block;
+}
+.vertical-counter-style-2 .separator {
+	background-color: #e4e4e4;
+	position: absolute;
+	bottom: 10px;
+	left: -3px;
+	width: calc(100% + 6px);
+	height: 10px;
+}
+.vertical-counter-style-2 .title {
+	margin: 0;
+}
+
+/* Vertical Counter Style 03 */
+.vertical-counter-style-3 *,
+.vertical-counter-style-3 {
+	will-change: transform;
+}
+.vertical-counter-style-3 .verticle-counter-icon,
+.vertical-counter-style-3 .verticle-counter-icon *{
+	will-change: auto;
+}
+.vertical-counter-style-3 {
+	border: 1px solid #e4e4e4;
+	padding: 60px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	overflow: hidden;
+}
+.vertical-counter-style-3 .verticle-counter-icon {
+	font-size: 24px;
+	display: inline-block;
+	position: relative;
+	line-height: 0;
+	vertical-align: baseline;
+	top: -25px;
+	margin-right: -5px;
+	transition: all .5s cubic-bezier(.5,1,.89,1);
+}
+.vertical-counter-style-3:hover .verticle-counter-icon {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	color: #FF9857;
+}
+.vertical-counter-style-3 .content {
+	margin-top: 150px;
+}
+.vertical-counter-style-3.top .content-wrap {
+	order: -1;
+}
+.vertical-counter-style-3.top .content {
+	margin-top: 0;
+	margin-bottom: 150px;
+}
+.vertical-counter-style-3 .vertical-counter {
+	font-size: 3.438rem;
+	line-height: 3.438rem;
+	letter-spacing: -2px;
+	transition: all .5s cubic-bezier(.5,1,.89,1);
+}
+.vertical-counter-style-3 .number-suffix,
+.vertical-counter-style-3 .number-prefix {
+	font-size: 3.438rem;
+	line-height: 3.438rem;
+	letter-spacing: -2px;
+	color: var( --e-global-color-secondary, #232323 );
+	transition: all .5s cubic-bezier(.5,1,.89,1);
+}
+.vertical-counter-style-3 .content {
+	font-size: 19px;
+	color: var( --e-global-color-secondary, #232323 );
+	display: inline-block;
+	transition: all .5s cubic-bezier(.5,1,.89,1);
+}
+.vertical-counter-style-3 .content p:last-child {
+	margin-bottom: 0;
+}
+.vertical-counter-style-3:hover .vertical-counter {
+	color: #d8d8d4;
+}
+.vertical-counter-style-3 .number-prefix {
+	margin-right: 3px;
+}
+.vertical-counter-style-3:hover .number-suffix,
+.vertical-counter-style-3:hover .number-prefix,
+.vertical-counter-style-3:hover .content {
+	color: #d8d8d4;	
+}
+.vertical-counter-style-3 .block-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var( --e-global-color-secondary, #232323 );
+	z-index: -1;
+	opacity: 0;
+	transition: all .5s cubic-bezier(.5,1,.89,1);
+}
+.vertical-counter-style-3:hover .block-overlay {
+	opacity: 1;
+}
+.vertical-counter-style-3 .verticle-counter-icon svg {
+	width: 1em;
+	height: auto;
+}
+
+/* Vertical Counter Style 04 */
+.vertical-counter-style-4 .counter-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	flex-direction: column;
+}
+.vertical-counter-style-4 .elementor-counter-number-wrapper {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	font-size: 69px;
+	font-weight: 600;
+	line-height: 1;
+	text-align: center;
+}
+.vertical-counter-style-4 .elementor-counter-number-wrapper .number-prefix, 
+.vertical-counter-style-4 .elementor-counter-number-wrapper .number-suffix {
+	white-space: normal;
+	color: #000;
+}
+.vertical-counter-style-4 .elementor-counter-number-wrapper .number-prefix {
+	text-align: end;
+	flex-grow: var(--counter-prefix-grow, 1);
+}
+.vertical-counter-style-4 .elementor-counter-number-wrapper .number-suffix {
+	text-align: start;
+	flex-grow: var(--counter-suffix-grow, 1);
+}
+.vertical-counter-style-4 .elementor-counter-number-wrapper .verticle-counter-icon {
+	display: flex;
+	position: relative;
+	top: 0;
+}
+.vertical-counter-style-4 .elementor-counter-number-wrapper .vertical-counter {
+	font-size: 70px;
+	line-height: 1;
+	color: #000;
+	flex-grow: var(--counter-number-grow, 0);
+}
+.vertical-counter-style-4 .counter-wrapper .title {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	font-size: 19px;
+	font-weight: 400;
+	line-height: 2.5;
+}
+.vertical-counter-style-4 .verticle-counter-icon svg {
+	width: 1em;
+	height: auto;
+}
+
+/* Float Animation */
+.vertical-counter-style-4 .counter-wrapper .animation-float {
+	align-items: start;
+}
+.vertical-counter-style-4 .counter-wrapper .animation-float span i,
+.vertical-counter-style-4 .counter-wrapper .animation-float span svg {
+	animation: float 2s linear .5s infinite alternate both;
+}
+.vertical-counter-style-4 .verticle-counter-icon svg {
+	width: 1em;
+	height: auto;
+}
+
+/* Counter Widget */
+.vertical-counter-style-5 {
+	position: relative;
+	text-align: center;
+}
+.vertical-counter-style-5 .elementor-counter {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	flex-direction: column;
+}
+.vertical-counter-style-5 .elementor-counter-number-wrapper {
+	flex: 1;
+	font-size: 69px;
+	font-weight: 600;
+	line-height: 1;
+	text-align: center;
+	display: flex;
+	justify-content: center
+}
+.vertical-counter-style-5 .vertical-counter {
+	font-size: 70px;
+	line-height: 1;
+	color: #c2c2c2;
+	flex-grow: var(--counter-number-grow, 0);
+}
+.vertical-counter-style-5 .counter-wrapper .title {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	font-size: 19px;
+	font-weight: 400;
+	line-height: 2.5;
+	white-space: nowrap;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	color: var( --e-global-color-secondary, #232323 );
+}
+.vertical-counter-style-5 .counter-wrapper .horizontal-separator {
+	background-color: #e4e4e4;
+	display: block;
+	position: absolute;
+	left: calc(100% + 15px);
+	top: 50%;
+	width: 1px;
+	height: 50%;
+	transform: translateY(-50%);
+}
+
+@keyframes craftoFloatAnimation {
+	0% {
+		transform: translateY(var(--float-animate-counter-from, 0px));
+	}
+
+	50% {
+		transform: translateY(var(--float-animate-counter-middle, 5px));
+	}
+
+	100% {
+		transform: translateY(var(--float-animate-counter-to, 10px));
+	}
+}
+
+/* Responsive CSS Here */
+@media (max-width: 767px) {
+	.vertical-counter-style-3 .verticle-counter-icon {
+		top: -15px;
+	}
+	.vertical-counter-style-4 .elementor-counter-number-wrapper{
+		justify-content: center;
+	}
+}

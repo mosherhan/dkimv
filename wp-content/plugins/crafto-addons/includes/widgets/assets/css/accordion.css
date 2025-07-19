@@ -1,0 +1,219 @@
+/* ===================================
+	Accordion
+====================================== */
+.elementor-widget-crafto-accordion {
+	width: 100%;
+}
+.elementor-icon {
+	font-size: 20px;
+}
+.elementor-accordion .elementor-tab-title {
+	padding: 15px 0;
+	cursor: pointer;
+	outline: none;
+	font-weight: 500;
+	position: relative;
+	display: flex;
+	align-items: center;
+	line-height: inherit;
+	color: var( --e-global-color-secondary, #232323);
+}
+.elementor-accordion .elementor-tab-title .elementor-accordion-icon {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 25px;
+	height: 25px;
+	overflow: hidden;
+	transform: translateY(-50%);
+}
+.elementor-accordion .elementor-tab-title .elementor-accordion-icon svg {
+	width: 1em;
+	height: 1em;
+}
+.elementor-accordion .elementor-tab-title .elementor-accordion-icon .elementor-accordion-icon-closed,
+.elementor-accordion .elementor-tab-title .elementor-accordion-icon .elementor-accordion-icon-opened {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+.elementor-accordion .elementor-tab-title:not(.elementor-active) .elementor-accordion-icon-opened,
+.elementor-accordion .elementor-tab-title.elementor-active .elementor-accordion-icon-closed {
+	display: none;
+}
+.elementor-accordion .elementor-tab-title .elementor-accordion-icon-left+a {
+	padding-left: 35px;
+}
+.elementor-accordion .elementor-tab-title .elementor-accordion-icon-left+.number {
+	margin-left: 35px;
+}
+.elementor-accordion .elementor-tab-content {
+	overflow: hidden;
+	transition: max-height 0.4s ease;
+	max-height: 0;
+	visibility: hidden;
+	opacity: 0;
+}
+.elementor-accordion .elementor-tab-content.elementor-active {
+	visibility: visible;
+	opacity: 1;
+}
+.elementor-editor-active .elementor-accordion .elementor-tab-content {
+	display: block;
+}
+.elementor-accordion .elementor-tab-title .elementor-accordion-icon.elementor-accordion-icon-right {
+	right: 0;
+	left: inherit;
+}
+.elementor-accordion .elementor-accordion-item {
+	position: relative;
+}
+.elementor-accordion .elementor-accordion-item .tab-item-icon {
+	position: absolute;
+	right: -32px;
+	top: 50%;
+	opacity: 0;
+	font-size: 80px;
+	transition: .3s;
+	transform: rotate(-35deg) translateY(-50%);
+}
+.elementor-accordion .elementor-accordion-item .tab-item-icon svg {
+	width: 1em;
+	height: auto;
+}
+.elementor-accordion-item.elementor-item-active .tab-item-icon {
+	opacity: .15;
+}
+.elementor-accordion .elementor-tab-title .icon {
+	margin-right: 10px;
+}
+.elementor-widget-crafto-accordion.appear:not(.anime-complete) .elementor-accordion-item{
+	transition: 0s;
+}
+
+/* Accordion Style 01 */
+.accordion-style-1 .elementor-accordion-item {
+	border: none;
+	overflow: hidden;
+	margin-bottom: 15px;
+	transition: all 350ms cubic-bezier(0.37, 0, 0.63, 1);
+}
+.accordion-style-1 .elementor-tab-title .elementor-accordion-icon {
+	border-radius: 50px;
+}
+.accordion-style-1 .elementor-accordion-item .elementor-tab-content {
+	padding: 0;
+	border: 0;
+}
+.accordion-style-1 .elementor-accordion-item .elementor-tab-content .panel-tab-content {
+	padding-bottom: 0;
+}
+.accordion-style-1 .elementor-tab-title .number {
+	background-color: var( --e-global-color-secondary, #232323);
+	border-radius: 100%;
+	font-size: 13px;
+	font-weight: 500;
+	width: 40px;
+	height: 40px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+	flex-shrink: 0;
+}
+.accordion-style-1 .panel-tab-content p:last-child {
+	margin-bottom: 0;
+}
+
+/* Accordion Style 02 */
+.accordion-style-2 .elementor-accordion-item {
+	border: none;
+	border-radius: 4px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 20px;
+	padding: 25px 35px 27px 75px;
+	box-shadow: 0 15px 40px 5px rgba(111, 111, 111, 0.15);
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.accordion-style-2 .elementor-accordion-item:last-child {
+	margin-bottom: 0 !important;
+}
+.accordion-style-2 .elementor-tab-title {
+	position: static;
+	padding: 0;
+}
+.accordion-style-2 .elementor-tab-title .title {
+	color: var( --e-global-color-secondary, #232323 );
+}
+.accordion-style-2 .elementor-tab-title .number {
+	position: absolute;
+	top: 15px;
+	left: -13px;
+	font-size: 55px;
+	line-height: 55px;
+}
+.accordion-style-2 .elementor-accordion-item .elementor-tab-content {
+	border: none;
+	padding: 0;
+}
+.accordion-style-2 .elementor-accordion-item .elementor-tab-content .panel-tab-content {
+	padding: 10px 0;
+}
+.accordion-style-2 .panel-tab-content p:last-child {
+	margin-bottom: 0;
+}
+
+/* Accordion Style 03 */
+.accordion-style-3 .elementor-accordion-item {
+	border: none;
+	border-bottom: 1px solid #e4e4e4;
+}
+.accordion-style-3 .elementor-accordion-item:last-child {
+	border: none;
+}
+.accordion-style-3 .event-time {
+	width: 354px;
+	display: flex;
+	align-items: center;
+}
+.accordion-style-3 .event-time i,
+.accordion-style-3 .event-time img {
+	margin-right: 5px;
+}
+.accordion-style-3 .elementor-tab-content {
+	border: none;
+	padding: 0;
+}
+.accordion-style-3 .elementor-tab-content .panel-tab-content {
+	padding-bottom: 15px;
+}
+.accordion-style-3 .number {
+	margin-right: 10px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.accordion-style-3 .elementor-accordion-icon.elementor-accordion-icon-right {
+	margin-right: 10px;
+}
+.accordion-style-3 .elementor-accordion-item .elementor-tab-title {
+	flex-wrap: wrap;
+}
+.accordion-style-3 .panel-tab-content p:last-child {
+	margin-bottom: 0;
+}
+
+/* Responsive CSS here */
+@media (max-width: 767px) {
+	.accordion-style-3 .event-time {
+		margin-right: 20px;
+	}
+}

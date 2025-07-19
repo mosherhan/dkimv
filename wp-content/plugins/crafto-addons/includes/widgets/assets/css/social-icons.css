@@ -1,0 +1,425 @@
+/* ===================================
+	Social Icons
+====================================== */
+/* Social Icon Default CSS Here */
+.social-icons-wrapper ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.social-icons-wrapper li:last-child a.elementor-icon {
+	margin-right: 0;
+}
+.social-icons-wrapper li:first-child a.elementor-icon {
+	margin-left: 0;
+}
+.social-icons-wrapper li {
+	margin: 0;
+}
+.social-icons-wrapper ul li a.elementor-icon {
+	margin-right: 10px;
+	color: var( --e-global-color-secondary, #232323 );
+	background-color: transparent;
+	padding: 0;
+	font-size: 14px;
+	width: auto;
+	height: auto;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+.social-icons-wrapper ul li a.elementor-icon i {
+	width: auto;
+	height: auto;
+	display: inline-block;
+	vertical-align: middle;
+}
+.social-icons-wrapper ul li a.elementor-icon svg {
+	display: inline-block;
+	vertical-align: middle;
+	fill: var( --e-global-color-secondary, #232323 );
+}
+.social-icons-wrapper ul li a.elementor-icon i:before {
+	position: static;
+}
+.social-icons-wrapper ul li a.elementor-social-icon i,
+.social-icon a.elementor-social-icon i {
+	color: var( --e-global-color-secondary, #232323 );
+}
+.social-icons-wrapper ul li a.elementor-social-icon:hover i,
+.social-icons-wrapper ul li a.elementor-social-icon:hover {
+	color: rgba(0, 0, 0, .6);
+}
+.social-icons-wrapper ul li a.elementor-social-icon:hover svg {
+	fill: rgba(0, 0, 0, .6);
+}
+.default.social-icons-wrapper ul li a.elementor-icon {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.default.social-icons-wrapper ul li:last-child a.elementor-icon {
+	margin-right: 0;
+}
+.default.social-icons-wrapper ul li:first-child a.elementor-icon {
+	margin-left: 0;
+}
+.default.social-icons-wrapper ul li a.elementor-icon span,
+.default.social-icons-wrapper ul li a.elementor-icon {
+	transition: all 0.3s ease-in-out;
+	vertical-align: middle;
+}
+.social-icon a.elementor-social-icon {
+	background-color: transparent;
+}
+.social-icons-wrapper ul.slide-on-hover li a:hover {
+	padding-left: 3px;
+}
+.elementor-widget-crafto-social-icons .social-icons-wrapper ul li a.hvr-float-2px:focus,
+.elementor-widget-crafto-social-icons .social-icons-wrapper ul li a.hvr-float-3px:focus,
+.elementor-widget-crafto-social-icons .social-icons-wrapper ul li a.hvr-float-5px:focus,
+.elementor-widget-crafto-social-icons .social-icons-wrapper ul li a.hvr-float-10px:focus {
+	transform: translateY(0px);
+}
+.elementor-widget-crafto-social-icons .social-icons-wrapper ul li a.hvr-float-2px:focus:hover {
+	transform: translateY(-2px);
+}
+.elementor-widget-crafto-social-icons .social-icons-wrapper ul li a.hvr-float-3px:focus:hover {
+	transform: translateY(-3px);
+}
+.elementor-widget-crafto-social-icons .social-icons-wrapper ul li a.hvr-float-5px:focus:hover {
+	transform: translateY(-5px);
+}
+.elementor-widget-crafto-social-icons .social-icons-wrapper ul li a.hvr-float-10px:focus:hover {
+	transform: translateY(-10px);
+}
+
+/* Social Icon Style 01 */
+.social-icon-style-1.social-icons-wrapper ul li,
+.social-icon-style-1 ul li {
+	display: inline-block;
+}
+.social-icon-style-1.social-icons-wrapper ul li a.elementor-icon,
+.social-icon-style-1 ul li a {
+	position: relative;
+	border-radius: 100%;
+	color: var( --e-global-color-secondary, #232323 );
+	width: 50px;
+	height: 50px;
+	z-index: 1;
+}
+.social-icon-style-1.social-icons-wrapper ul li a.elementor-icon:hover,
+.social-icon-style-1.social-icons-wrapper ul li a.elementor-icon:hover i,
+.social-icon-style-1 ul li a:hover,
+.social-icon-style-1 ul li a:hover i {
+	color: #fff;
+}
+.social-icon-style-1.social-icons-wrapper ul li a.elementor-icon:hover svg,
+.social-icon-style-1 ul li a:hover svg {
+	fill: #fff;
+}
+.social-icon-style-1.social-icons-wrapper ul li a.elementor-icon i,
+.social-icon-style-1.social-icons-wrapper ul li a.elementor-icon svg,
+.social-icon-style-1 ul li a i,
+.social-icon-style-1 ul li a svg {
+	position: relative;
+	transition: all 0.4s;
+}
+.social-icon-style-1.social-icons-wrapper ul li a.elementor-icon span {
+	background-color: var( --e-global-color-secondary, #232323 );
+	border-radius:100px;
+	width: 0;
+	height: 0;
+	left: 50%;
+	top: 50%;
+	margin: 0;
+	display: block;
+	position: absolute;
+	transition: all 0.4s;
+	z-index: -1;
+}
+.social-icon-style-1.social-icons-wrapper ul li a.elementor-icon:hover span {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+/* Social Icon Style 02 */
+.social-icon-style-2.social-icons-wrapper ul li {
+	vertical-align: middle;
+}
+.social-icon-style-2.social-icons-wrapper ul li a.elementor-icon {
+	color: var( --e-global-color-secondary, #232323 );
+	height: auto;
+	width: auto;
+	padding: 0;
+	margin-right: 25px;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+}
+.social-icon-style-2.social-icons-wrapper ul li a.elementor-icon i,
+.social-icon-style-2.social-icons-wrapper ul li a.elementor-icon svg {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition-duration: 0.3s;
+}
+.social-icon-style-2.social-icons-wrapper ul li a.elementor-icon i {
+	height: 100%;
+	width: 100%;
+}
+.social-icon-style-2.social-icons-wrapper ul li a.elementor-icon svg {
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+.social-icon-style-2.social-icons-wrapper ul li a.elementor-icon:hover svg {
+	top: 50%;
+	transform: translate(-50%, -50%);
+	transition-duration: 0.3s;
+}
+.social-icon-style-2.social-icons-wrapper ul li a.elementor-icon:hover i{
+	top: 0;
+	transition-duration: 0.3s;
+}
+.social-icon-style-2.social-icons-wrapper a>span {
+	line-height: inherit;
+	font-weight: 500;
+	top: 0;
+	position: relative;
+}
+.social-icon-style-2.social-icons-wrapper ul li a.elementor-icon>span,
+.social-icon-style-2.social-icons-wrapper ul li a.elementor-icon i,
+.social-icon-style-2.social-icons-wrapper ul li a.elementor-icon svg {
+	transition: all 0.3s;
+}
+.social-icon-style-2.social-icons-wrapper a:hover>span {
+	top: -50px;
+	transition: all 0.3s;
+}
+.social-icon-style-2.social-icons-wrapper .elementor-icon i:before,
+.social-icon-style-2.social-icons-wrapper .elementor-icon svg:before {
+	position: initial;
+	left: initial;
+	transform: initial;
+}
+.elementor-icon-view-vertical .social-icon-style-2.social-icons-wrapper ul li a.elementor-icon {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/* Social Icon Style 03 */
+.social-icon-style-3.social-icons-wrapper ul li a.elementor-icon {
+	color: var( --e-global-color-secondary, #232323 );
+	position: relative;
+	margin-right: 15px;
+	width: 50px;
+	height: 50px;
+	border: 1px solid rgba(35,35,35,.3);
+	border-radius: 100px;
+	font-size: 18px;
+	z-index: 0;
+}
+.social-icon-style-3.social-icons-wrapper ul li a.elementor-icon:hover {
+	background-color: transparent !important;
+}
+.social-icon-style-3.social-icons-wrapper ul li a.elementor-icon:hover i {
+	color: #fff;
+}
+.social-icon-style-3.social-icons-wrapper ul li a.elementor-icon:hover svg {
+	fill: #fff;
+}
+.social-icon-style-3.social-icons-wrapper ul li a.elementor-icon i,
+.social-icon-style-3.social-icons-wrapper ul li a.elementor-icon svg {
+	position: relative;
+	transition: .5s cubic-bezier(.12,0,.39,0);
+}
+.social-icon-style-3.social-icons-wrapper ul li a.elementor-icon:after {
+	content: '';
+	display: block;
+	border-radius: 100%;
+	height: 100%;
+	width: 100%;
+	top: -1px;
+	left: -1px;
+	padding: 1px;
+	box-sizing: content-box;
+	margin: 0;
+	position: absolute;
+	transform: scale(1.2);
+	opacity: 0;
+	transition: .5s cubic-bezier(.12,0,.39,0);
+	z-index: -1;
+}
+.social-icon-style-3.social-icons-wrapper ul li a.elementor-icon:hover:after {
+	transform: scale(1);
+	opacity: 1;
+	background-color: var( --e-global-color-secondary, #232323 );
+}
+
+/* Social Icon Style 04 */
+.social-icon-style-4.social-icons-wrapper ul li a.elementor-icon {
+	border-radius: 0;
+	position: relative;
+	color: var( --e-global-color-secondary, #232323 );
+	z-index: 1;
+	overflow: hidden;
+	width: 60px;
+	height: 60px;
+}
+.social-icon-style-4.social-icons-wrapper ul li a.elementor-icon:hover,
+.social-icon-style-4.social-icons-wrapper ul li a.elementor-icon:hover i {
+	color: #fff;
+}
+.social-icon-style-4.social-icons-wrapper ul li a.elementor-icon:hover svg {
+	fill: #fff;
+}
+.social-icon-style-4.social-icons-wrapper ul li a.elementor-icon span {
+	position: absolute;
+	top: -100%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	transition: all 0.5s;
+	background-color: var( --e-global-color-secondary, #232323 );
+}
+.social-icon-style-4.social-icons-wrapper ul li a.elementor-icon:hover span {
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+.social-icon-style-4.social-icons-wrapper ul li a.elementor-icon i,
+.social-icon-style-4.social-icons-wrapper ul li a.elementor-icon svg {
+	position: relative;
+	transition: all 0.5s;
+}
+
+/* Social Icon Style 05 */
+.social-icon-style-5.social-icons-wrapper ul {
+	flex-wrap: wrap;
+	display: inline-flex;
+}
+.social-icon-style-5.social-icons-wrapper ul li {
+	border: 1px solid var( --e-global-color-secondary, #232323 );
+	padding: 5px 20px 5px;
+	margin: 0;
+}
+.elementor-widget-crafto-social-icons:not(.elementor-icon-view-vertical) .social-icon-style-5.social-icons-wrapper ul li {
+	text-align: center;
+}
+.social-icon-style-5.social-icons-wrapper ul li a,
+.elementor-icon-view-vertical .social-icons-wrapper.social-icon-style-5 ul li a {
+	margin: 0;
+}
+.social-icon-style-5.social-icons-wrapper ul li .social-icon-text {
+	margin-left: 10px;
+}
+.social-icon-style-5.social-icons-wrapper ul li a.elementor-icon i,
+.social-icon-style-5.social-icons-wrapper ul li a.elementor-icon svg,
+.social-icon-style-5.social-icons-wrapper ul li .social-icon-text {
+	position: relative;
+	transition: all 0.3s;
+}
+.social-icon-style-5.social-icons-wrapper ul li a.elementor-icon:hover,
+.social-icon-style-5.social-icons-wrapper ul li a.elementor-icon:hover i {
+	color: rgba(0, 0, 0, .6);
+}
+.social-icon-style-5.social-icons-wrapper ul li a.elementor-icon:hover svg {
+	fill: rgba(0, 0, 0, .6);
+}
+.elementor-icon-view-vertical .social-icons-wrapper.social-icon-style-5 ul li {
+	width: 100%;
+}
+
+/* Icon Size */
+.social-icons-wrapper ul.extra-small-icon li a.elementor-icon {
+	font-size: 14px;
+}
+.social-icons-wrapper ul.small-icon li a.elementor-icon {
+	font-size: 18px;
+}
+.social-icons-wrapper ul.medium-icon li a.elementor-icon {
+	font-size: 20px;
+}
+.social-icons-wrapper ul.large-icon li a.elementor-icon {
+	font-size: 24px;
+}
+.social-icons-wrapper ul.extra-large-icon li a.elementor-icon {
+	font-size: 30px;
+}
+.icon-social-very-small {
+	font-size: 12px;
+}
+.icon-social-small {
+	font-size: 14px;
+}
+.icon-social-medium {
+	font-size: 16px;
+}
+.icon-social-large {
+	font-size: 20px;
+}
+.icon-social-extra-large {
+	font-size: 24px;
+}
+.icon-social-very-small a i,
+.icon-social-small a i,
+.icon-social-medium a i,
+.icon-social-very-small a svg,
+.icon-social-small a svg,
+.icon-social-medium a svg{
+	margin: 0 8px;
+	vertical-align: middle;
+}
+.icon-social-large a i,
+.icon-social-large a svg {
+	margin: 0 4px;
+	vertical-align: middle;
+}
+.extra-small-icon a {
+	font-size: 14px;
+	width: 30px;
+	height: 30px;
+}
+.small-icon a {
+	font-size: 18px;
+	width: 40px;
+	height: 40px;
+}
+.medium-icon a {
+	font-size: 20px;
+	width: 50px;
+	height: 50px;
+}
+.large-icon a {
+	font-size: 24px;
+	width: 60px;
+	height: 60px;
+}
+.extra-large-icon a {
+	font-size: 30px;
+	width: 70px;
+	height: 70px;
+}
+
+/* Elementor Icon Vertical */
+.elementor-icon-view-vertical .social-icons-wrapper ul li {
+	display: block;
+	line-height: normal;
+}
+.elementor-icon-view-vertical .social-icons-wrapper ul li a,
+.elementor-icon-view-vertical .default.social-icons-wrapper ul li a {
+	margin: 10px 0;
+}
+.elementor-icon-view-vertical .social-icons-wrapper ul li:first-child a {
+	margin-top: 0;
+}
+.elementor-icon-view-vertical .social-icons-wrapper ul li:last-child a {
+	margin-bottom: 0; 
+}

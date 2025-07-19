@@ -1,0 +1,178 @@
+/* ===================================
+	Star Rating
+====================================== */
+.elementor-star-rating i {
+	margin-right: 2px;
+	font-size: 16px;
+	font-style: normal;
+	position: relative;
+	display: inline-block;
+}
+.elementor-star-rating i:last-child,
+.elementor--star-style-star_unicode .elementor-star-rating i:last-child,
+.elementor--star-style-star_bootstrap .elementor-star-rating i:last-child {
+	margin: 0;
+}
+.elementor-star-rating i:before {
+	color: #fd961e;
+	right: 0;
+	display: block;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+.elementor-star-rating i:after,
+.elementor-star-rating i.elementor-star-empty:before {
+	color: #ccd6df;
+	vertical-align: top;
+}
+.elementor-star-rating .elementor-star-1:before {
+	width: 10%;
+}
+.elementor-star-rating .elementor-star-2:before {
+	width: 20%;
+}
+.elementor-star-rating .elementor-star-3:before {
+	width: 30%;
+}
+.elementor-star-rating .elementor-star-4:before {
+	width: 40%;
+}
+.elementor-star-rating .elementor-star-5:before {
+	width: 50%;
+}
+.elementor-star-rating .elementor-star-6:before {
+	width: 60%;
+}
+.elementor-star-rating .elementor-star-7:before {
+	width: 70%;
+}
+.elementor-star-rating .elementor-star-8:before {
+	width: 80%;
+}
+.elementor-star-rating .elementor-star-9:before {
+	width: 90%;
+}
+.review-star-icon,
+.review-star-icon .elementor-star-rating {
+	line-height: normal;
+}
+
+/* Star Fontawesome */
+.elementor--star-style-star_fontawesome .elementor-star-rating {
+	font-family: unset;
+}
+.elementor--star-style-star_fontawesome .elementor-star-rating i:after {
+	content: "\f005";
+	font-weight: 900;
+	font-family: "Font Awesome 6 Free";
+}
+.elementor--star-style-star_fontawesome .elementor-star-rating i:before {
+	content: "\f005";
+	font-weight: 900;
+	font-family: "Font Awesome 6 Free";
+}
+
+/* Star Bootstrap */
+.elementor--star-style-star_bootstrap .elementor-star-rating {
+	font-family: unset;
+}
+.elementor--star-style-star_bootstrap .elementor-star-rating i:after {
+	content: "\f586";
+	font-weight: 400;
+	font-family: "bootstrap-icons";
+}
+.elementor--star-style-star_bootstrap .elementor-star-rating i:before {
+	content: "\f586";
+	font-weight: 400;
+	font-family: "bootstrap-icons";
+}
+
+/* Outline */
+.elementor--star-style-star_fontawesome.elementor-star-outline .elementor-star-rating i:after,
+.elementor--star-style-star_fontawesome.elementor-star-outline .elementor-star-rating i.elementor-star-empty:before {
+	font-weight: 400;
+}
+.elementor--star-style-star_bootstrap.elementor-star-outline .elementor-star-rating i:after,
+.elementor--star-style-star_bootstrap.elementor-star-outline .elementor-star-rating i.elementor-star-empty:before {
+	content: "\f588";
+}
+
+/* Star Unicode */
+.elementor--star-style-star_unicode .elementor-star-rating i {
+	font-size: 22px;
+	margin-right: 0;
+}
+.elementor--star-style-star_unicode .elementor-star-rating {
+	font-family: "Arial", "Helvetica", sans-serif;
+}
+.elementor--star-style-star_unicode .elementor-star-rating i:not(.elementor-star-empty):before {
+	content: "★";
+}
+
+/* Star Rating Widget Style 01 */
+.rating-style-1 {
+	border-radius: 10px;
+	background-color: #fff;
+	text-align: center;
+	box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+	background-color: var( --e-global-color-secondary, #232323 );
+	border-radius: 10px;
+}
+.rating-style-1 img {
+	height: auto;
+	margin: 15px 25px;
+	width: 50px;
+}
+.rating-style-1 .rating-content-box {
+	padding: 25px;
+	background-color: #fff;
+	border-radius: 8px;
+	position: relative;
+	top: -1px;
+}
+.rating-style-1 .rating-content-box .star-rating-number {
+	color: #000;
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 600;
+}
+.rating-style-1 .rating-content-box .elementor-star-rating i {
+	font-size: 18px;
+}
+.rating-style-1 .rating-content-box .rating-review-number {
+	color: #000;
+	display: block;
+	margin-top: 5px;
+}
+.rating-style-1 .rating-content-box .review-text {
+	display: inline-block;
+	border-radius: 30px;
+	background-color: #000;
+	color: #fff;
+	font-size: 11px;
+	padding: 0 20px;
+}
+
+/* Star Rating Widget Style 02 */
+.rating-style-2 {
+	background-color: var( --e-global-color-secondary, #232323 );
+	text-align: center;
+	border-radius: 30px;
+}
+.rating-style-2 .rating-content-box {
+	padding: 3px 20px 3px;
+}
+.rating-style-2 .rating-content-box .elementor-star-rating i {
+	font-size: 16px;
+	margin-right: 0;
+}
+.elementor--star-style-star_bootstrap .elementor-star-rating i,
+.elementor--star-style-star_bootstrap .rating-style-2 .elementor-star-rating i {
+	margin-right: 2px;
+}
+.elementor--star-style-star_bootstrap .elementor-star-rating i:last-child,
+.elementor--star-style-star_bootstrap .rating-style-2 .elementor-star-rating i:last-child {
+	margin-right: 0;
+}

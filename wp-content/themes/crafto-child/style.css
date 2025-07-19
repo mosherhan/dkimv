@@ -1,0 +1,596 @@
+/*
+Theme Name: Crafto Child
+Theme URI: https://crafto.themezaa.com/
+Author: ThemeZaa
+Author URI: https://www.themezaa.com/
+Description: Child theme for Crafto theme
+Requires at least: 6.0
+Tested up to: 6.0.2
+Requires PHP: 7.4
+Version: 1.0
+License: Themeforest Split Licence
+License URI: https://themeforest.net/licenses/
+Text Domain: crafto-child
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, grid-layout, custom-background, custom-colors, flexible-header, custom-menu, editor-style, featured-images, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, blog, e-commerce
+Template: crafto
+*/
+
+body:not(.crafto-theme-ready) .mfp-wrap,
+body:not(.crafto-theme-ready) .mfp-bg.crafto-promo-popup-mfp-bg,
+body:not(.crafto-theme-ready) .crafto-promo-popup-wrap,
+body:not(.crafto-theme-ready) .verticalbar-wrap,
+body:not(.crafto-theme-ready) .search-form-wrapper,
+body:not(.crafto-theme-ready) .crafto-main-content-wrap div[data-elementor-type="wp-page"] .e-con:first-child {
+    display: none;
+}
+
+/* Landing Page Header */
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar.full-megamenu-open,
+.elementor-page-301 .header-common-wrapper.navbar.full-megamenu-open,
+.elementor-page-5478 .header-common-wrapper.navbar.full-megamenu-open {
+	background-color: rgb(21, 22, 29) !important;
+}
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-19 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-19 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-19 .megamenu-content > .elementor > .elementor-element{
+    background-color: rgb(21, 22, 29) !important;
+    background-image: url(assets/images/pre-built-sites-bg-dark-landing.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-color: rgba(255,255,255,.15) !important;
+}
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-20 .megamenu-content .crafto-primary-title,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-20 .megamenu-content .crafto-primary-title,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-20 .megamenu-content .crafto-primary-title,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-22 .megamenu-content .crafto-primary-title,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-22 .megamenu-content .crafto-primary-title,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-22 .megamenu-content .crafto-primary-title,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-23 .megamenu-content .crafto-primary-title,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-23 .megamenu-content .crafto-primary-title,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-23 .megamenu-content .crafto-primary-title,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-23 .megamenu-content .crafto-icon-box-wrapper .elementor-icon-box-title,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-23 .megamenu-content .crafto-icon-box-wrapper .elementor-icon-box-title,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-23 .megamenu-content .crafto-icon-box-wrapper .elementor-icon-box-title,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content .crafto-icon-box-wrapper .elementor-icon-box-title,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content .crafto-icon-box-wrapper .elementor-icon-box-title,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content .crafto-icon-box-wrapper .elementor-icon-box-title,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-26 .megamenu-content .simple-navigation-menu .submenu-icon-content span,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-26 .megamenu-content .simple-navigation-menu .submenu-icon-content span,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-26 .megamenu-content .simple-navigation-menu .submenu-icon-content span,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .features-menu-btn .elementor-widget-crafto-button .elementor-button-text,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .features-menu-btn .elementor-widget-crafto-button .elementor-button-text,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .features-menu-btn .elementor-widget-crafto-button .elementor-button-text{
+    font-weight: 500 !important;
+}
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-19 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-19 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-19 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-20 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-20 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-20 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-22 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-22 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-22 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-23 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-23 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-23 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-23 .megamenu-content > .elementor > .elementor-element .elementor-icon-box-content .elementor-icon-box-description,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-23 .megamenu-content > .elementor > .elementor-element .elementor-icon-box-content .elementor-icon-box-description,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-23 .megamenu-content > .elementor > .elementor-element .elementor-icon-box-content .elementor-icon-box-description,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-24 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-24 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-24 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .elementor-icon-box-content .elementor-icon-box-description,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .elementor-icon-box-content .elementor-icon-box-description,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .elementor-icon-box-content .elementor-icon-box-description{
+    font-weight: 400;
+}
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-20 .megamenu-content > .elementor > .elementor-element,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-22 .megamenu-content > .elementor > .elementor-element,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-23 .megamenu-content > .elementor > .elementor-element,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-24 .megamenu-content > .elementor > .elementor-element,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-26 .megamenu-content > .elementor > .elementor-element,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-20 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-22 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-23 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-24 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-26 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-20 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-22 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-23 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-24 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-26 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element{
+    border-color: rgba(255,255,255,.15) !important;
+}
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .features-menu-btn,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .features-menu-btn,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .features-menu-btn,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .features-menu-btn .elementor-widget-crafto-button,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .features-menu-btn .elementor-widget-crafto-button,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .features-menu-btn .elementor-widget-crafto-button{
+    border-color: rgba(255,255,255,.15);
+}
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .features-menu-btn .elementor-widget-crafto-button .elementor-button ,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .features-menu-btn .elementor-widget-crafto-button .elementor-button ,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .features-menu-btn .elementor-widget-crafto-button .elementor-button {
+    border-color: #fff;
+}
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .features-menu-btn .elementor-widget-crafto-button .elementor-button-text,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .features-menu-btn .elementor-widget-crafto-button .elementor-button-text,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .features-menu-btn .elementor-widget-crafto-button .elementor-button-text,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .features-menu-btn .elementor-widget-crafto-button i,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .features-menu-btn .elementor-widget-crafto-button i,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .features-menu-btn .elementor-widget-crafto-button i{
+    color: #fff !important;
+}
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-20 .megamenu-content .crafto-primary-title,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-22 .megamenu-content .crafto-primary-title,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-23 .megamenu-content .crafto-primary-title,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-26 .megamenu-content .submenu-icon-content span,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-26 .megamenu-content a .menu-item-icon,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content .crafto-icon-box-wrapper i,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content .crafto-icon-box-wrapper i::before,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content .elementor-icon-box-title span,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content .crafto-primary-title,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-20 .megamenu-content .crafto-primary-title,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-22 .megamenu-content .crafto-primary-title,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-23 .megamenu-content .crafto-primary-title,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-26 .megamenu-content .submenu-icon-content span,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-26 .megamenu-content a .menu-item-icon,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content .crafto-icon-box-wrapper i,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content .crafto-icon-box-wrapper i::before,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content .elementor-icon-box-title span,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content .crafto-primary-title,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-20 .megamenu-content .crafto-primary-title,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-22 .megamenu-content .crafto-primary-title,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-23 .megamenu-content .crafto-primary-title,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-26 .megamenu-content .submenu-icon-content span,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-26 .megamenu-content a .menu-item-icon,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content .crafto-icon-box-wrapper i,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content .crafto-icon-box-wrapper i::before,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content .elementor-icon-box-title span,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content .crafto-primary-title {
+    color: #fff;
+}
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-19 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-20 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-22 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-23 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-24 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-26 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-26 .megamenu-content > .elementor > .elementor-element .simple-navigation-menu li a p,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .crafto-icon-box-wrapper p,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-21 .dropdown-menu li a,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-24 .crafto-navigation-wrapper .crafto-navigation-link > li a,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-19 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-20 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-22 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-23 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-24 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-26 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-26 .megamenu-content > .elementor > .elementor-element .simple-navigation-menu li a p,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .crafto-icon-box-wrapper p,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-21 .dropdown-menu li a,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-24 .crafto-navigation-wrapper .crafto-navigation-link > li a,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-19 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-20 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-22 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-23 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-24 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-26 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-26 .megamenu-content > .elementor > .elementor-element .simple-navigation-menu li a p,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .crafto-icon-box-wrapper p,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-21 .dropdown-menu li a,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-24 .crafto-navigation-wrapper .crafto-navigation-link > li a,
+ .page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-23 .megamenu-content > .elementor > .elementor-element .elementor-icon-box-content .elementor-icon-box-description,
+ .elementor-page-301 .header-common-wrapper.navbar .menu-item-23 .megamenu-content > .elementor > .elementor-element .elementor-icon-box-content .elementor-icon-box-description,
+ .elementor-page-5478 .header-common-wrapper.navbar .menu-item-23 .megamenu-content > .elementor > .elementor-element .elementor-icon-box-content .elementor-icon-box-description{
+    color: #A8A8A8;
+}
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .features-color-box .crafto-icon-box-wrapper p,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .features-color-box .crafto-icon-box-wrapper p,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .features-color-box .crafto-icon-box-wrapper p {
+    color: #FFFFFF99 !important;
+}
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-19 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a:hover,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-20 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a:hover,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-22 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a:hover,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-23 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a:hover,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-24 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a:hover,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-26 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a:hover,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a:hover,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-21 .dropdown-menu li a:hover,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-24 .crafto-navigation-wrapper .crafto-navigation-link > li a:hover,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-19 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a:hover,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-20 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a:hover,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-22 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a:hover,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-23 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a:hover,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-24 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a:hover,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-26 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a:hover,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a:hover,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-21 .dropdown-menu li a:hover,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-24 .crafto-navigation-wrapper .crafto-navigation-link > li a:hover,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-19 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a:hover,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-20 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a:hover,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-22 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a:hover,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-23 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a:hover,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-24 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a:hover,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-26 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a:hover,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element .crafto-custom-menu-wrapper li a:hover,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-21 .dropdown-menu li a:hover,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-24 .crafto-navigation-wrapper .crafto-navigation-link > li a:hover{
+    color: #fff;
+}
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-24 .megamenu-content .premium-elements-bg .elementor-widget-crafto-custom-menu .crafto-custom-menu-wrapper > li a,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-24 .megamenu-content .premium-elements-bg .elementor-widget-crafto-custom-menu .crafto-custom-menu-wrapper > li a,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-24 .megamenu-content .premium-elements-bg .elementor-widget-crafto-custom-menu .crafto-custom-menu-wrapper > li a {
+    color: #232323 !important;
+}
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-20 .megamenu-content > .elementor > .elementor-element,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-22 .megamenu-content > .elementor > .elementor-element,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-23 .megamenu-content > .elementor > .elementor-element,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-24 .megamenu-content > .elementor > .elementor-element,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-26 .megamenu-content > .elementor > .elementor-element,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element,
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-21 .dropdown-menu,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-20 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-22 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-23 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-24 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-26 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-21 .dropdown-menu,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-20 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-22 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-23 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-24 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-26 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-6396 .megamenu-content > .elementor > .elementor-element,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-21 .dropdown-menu{
+    background-color: rgb(21, 22, 29) !important;
+}
+.page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-24 .megamenu-content .premium-elements-bg,
+.elementor-page-301 .header-common-wrapper.navbar .menu-item-24 .megamenu-content .premium-elements-bg,
+.elementor-page-5478 .header-common-wrapper.navbar .menu-item-24 .megamenu-content .premium-elements-bg {
+    background-image: url(assets/images/premium-elements-bg-dark.jpg);
+}
+.menu-item-19 .megamenu-content .crafto-custom-menu-wrapper li a .menu-badge::before,
+.menu-item-20 .megamenu-content .crafto-custom-menu-wrapper li a .menu-badge::before,
+.menu-item-24 .megamenu-content .crafto-custom-menu-wrapper li a .menu-badge::before {
+    opacity: .15;
+}
+.page-id-27 .menu-item-19 .megamenu-content .crafto-custom-menu-wrapper li a .menu-badge,
+.page-id-27 .menu-item-20 .megamenu-content .crafto-custom-menu-wrapper li a .menu-badge,
+.page-id-27 .menu-item-24 .megamenu-content .crafto-custom-menu-wrapper li a .menu-badge {
+    color: rgba(255, 255, 255, .60);
+    font-weight: 400;
+}
+.elementor-page-301 .menu-item-19 .megamenu-content .crafto-custom-menu-wrapper li a .menu-badge,
+.elementor-page-301 .menu-item-20 .megamenu-content .crafto-custom-menu-wrapper li a .menu-badge,
+.elementor-page-301 .menu-item-24 .megamenu-content .crafto-custom-menu-wrapper li a .menu-badge {
+    color: rgba(255, 255, 255, .60);
+    font-weight: 400;
+}
+.page-id-5478 .menu-item-19 .megamenu-content .crafto-custom-menu-wrapper li a .menu-badge,
+.page-id-5478 .menu-item-20 .megamenu-content .crafto-custom-menu-wrapper li a .menu-badge,
+.page-id-5478 .menu-item-24 .megamenu-content .crafto-custom-menu-wrapper li a .menu-badge {
+    color: rgba(255, 255, 255, .60);
+    font-weight: 400;
+}
+.page-id-27 .menu-item-19 .megamenu-content .crafto-custom-menu-wrapper li a .menu-badge::before,
+.page-id-27 .menu-item-20 .megamenu-content .crafto-custom-menu-wrapper li a .menu-badge::before,
+.page-id-27 .menu-item-24 .megamenu-content .crafto-custom-menu-wrapper li a .menu-badge::before {
+    opacity: .50;
+}
+.elementor-page-301 .menu-item-19 .megamenu-content .crafto-custom-menu-wrapper li a .menu-badge::before,
+.elementor-page-301 .menu-item-20 .megamenu-content .crafto-custom-menu-wrapper li a .menu-badge::before,
+.elementor-page-301 .menu-item-24 .megamenu-content .crafto-custom-menu-wrapper li a .menu-badge::before {
+    opacity: .50;
+}
+.elementor-page-5478 .menu-item-19 .megamenu-content .crafto-custom-menu-wrapper li a .menu-badge::before,
+.elementor-page-5478 .menu-item-20 .megamenu-content .crafto-custom-menu-wrapper li a .menu-badge::before,
+.elementor-page-5478 .menu-item-24 .megamenu-content .crafto-custom-menu-wrapper li a .menu-badge::before {
+    opacity: .50;
+}
+.megamenu-content .features-color-box .elementor-widget-crafto-icon-box .crafto-icon-box-wrapper,
+.megamenu-content .features-color-box .elementor-widget-crafto-icon-box .crafto-image-box-wrapper {
+    position: relative;
+}
+.megamenu-content .features-color-box .elementor-widget-crafto-icon-box .crafto-icon-box-wrapper:after,
+.megamenu-content .features-color-box .elementor-widget-crafto-icon-box .crafto-image-box-wrapper:after  {
+    content: "";
+    background-image: url(assets/images/arrow-up-right.svg);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    opacity: .80;
+    background-size: contain;
+}
+.megamenu-content .features-color-box .elementor-widget-crafto-icon-box .elementor-icon-box-icon,
+.megamenu-content .features-color-box .elementor-widget-crafto-icon-box .crafto-image-box-img {
+    border-right: 1px solid rgba(255, 255, 255, .20);
+    padding: 8px 7px 8px 9px;
+    align-self: stretch;
+}
+.megamenu-content .features-color-box .elementor-widget-crafto-icon-box .crafto-image-box-img {
+    padding: 0;
+}
+.megamenu-content .features-color-box .elementor-widget-crafto-icon-box .crafto-image-box-img img {
+    margin: 0 5px;
+}
+.megamenu-content .features-color-box .elementor-widget-crafto-icon-box .elementor-icon-box-content {
+    padding: 20px 0 18px;
+}
+.page-id-27 .megamenu-content .shop-menu-border-box .elementor-widget-crafto-icon-box .elementor-icon-box-title,
+.elementor-page-301 .megamenu-content .shop-menu-border-box .elementor-widget-crafto-icon-box .elementor-icon-box-title,
+.elementor-page-5478 .megamenu-content .shop-menu-border-box .elementor-widget-crafto-icon-box .elementor-icon-box-title {
+    color: #fff !important;
+    margin-bottom: -3px;
+}
+.page-id-27 .megamenu-content .features-color-box .elementor-widget-crafto-icon-box .elementor-icon-box-title,
+.elementor-page-301 .megamenu-content .features-color-box .elementor-widget-crafto-icon-box .elementor-icon-box-title,
+.elementor-page-5478 .megamenu-content .features-color-box .elementor-widget-crafto-icon-box .elementor-icon-box-title {
+    margin-bottom: -3px;
+}
+.page-id-27 .megamenu-content .shop-menu-border-box .elementor-widget-crafto-icon-box .elementor-widget-container,
+.elementor-page-5478 .megamenu-content .shop-menu-border-box .elementor-widget-crafto-icon-box .elementor-widget-container,
+.elementor-page-301 .megamenu-content .shop-menu-border-box .elementor-widget-crafto-icon-box .elementor-widget-container {
+    border-color: rgba(255, 255, 255, .10) !important;
+}
+body:not(.page-id-27, .elementor-page-5478, .elementor-page-301) .megamenu-content .shop-menu-border-box .elementor-widget-crafto-icon-box .crafto-icon-box-wrapper svg {
+    mix-blend-mode: difference;
+}
+.page-id-27 .navbar-nav .nav-item.full-width-megamenu .megamenu-content,
+.elementor-page-301 .navbar-nav .nav-item.full-width-megamenu .megamenu-content,
+.elementor-page-5478 .navbar-nav .nav-item.full-width-megamenu .megamenu-content {
+    box-shadow: 0 95px 75px 0 rgba(0, 0, 0, 0.7);
+}
+.landing-video-btn .video-button-style-2 .video-icon-box {
+    overflow: hidden;
+    position: relative;
+}
+.landing-video-btn .video-button-style-2 .video-icon-box .video-title::before {
+    content: "Explore Crafto";
+    display: inline-block !important;
+    position: absolute;
+    white-space: nowrap;
+    top: 50%;
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    transition: opacity 0.65s, transform 0.65s;
+    transition-timing-function: cubic-bezier(0.15, 0.85, 0.31, 1);
+}
+.landing-video-btn .video-button-style-2 .video-icon-box:hover .video-title::before {
+    transform: translate(-50%, 150%);
+    opacity: 1;
+}
+.landing-video-btn .video-button-style-2 .video-icon-box:hover .video-title {
+    transform: translateY(-200%);
+}
+body.page-id-27 .navbar-collapse .navbar-nav .menu-item-19.nav-item.current-menu-item:hover > a {
+    color: #FFFFFF99 !important;
+}
+
+/* Landing Page Theme Demos */
+.page-id-27 .theme-demos {
+    display: none !important;
+}
+
+/* footer */
+.landing-footer-btn .elementor-button {
+    background: linear-gradient(60deg,#e77d13,#fa4722,#ee2370,#a23cb3,#2c5cba,#007dab);
+    background-size: 200% 200%;
+    -webkit-animation: footeranimatedgradient 10s ease infinite alternate;
+    animation: footeranimatedgradient 10s ease infinite alternate;
+}
+
+/* MFG Popup */
+.mfp-wrap .mfp-arrow-left:before {
+	content: "";
+    background-image: url('assets/images/chevron-left-solid.svg');
+    background-repeat: no-repeat;
+	background-size: 15px;
+	background-position: center;
+	text-indent: -99999px;
+}
+.mfp-wrap .mfp-arrow-right:before {
+	content: "";
+    background-image: url('assets/images/chevron-right-solid.svg');
+    background-repeat: no-repeat;
+	background-size: 15px;
+	background-position: center;
+	text-indent: -99999px;
+}
+.mfp-wrap button.mfp-close:before,
+.mfp-wrap button.mfp-close:active:before {
+	content: "";
+	background-image: url('assets/images/mfp-close.svg');
+	width: 15px;
+    background-repeat: no-repeat;
+    height: 20px;
+	text-indent: -99999px;
+}
+
+/* Contact Form */
+.page-id-6 .crafto-form-style-5 .input-wrapper .select-arrow.right:after {
+    background-image: url(assets/images/download.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 16px 12px;
+    content: "";
+    width: 14px;
+}
+
+/* Mobile Menu */
+.dropdown-toggle:before {
+    content: "";
+    background-image: url('assets/images/angle-down-solid.svg');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    text-indent: -99999px;
+    width: 15px;
+    height: 15px;
+}
+[data-mobile-nav-style=modern] .dropdown-toggle:before {
+    background-image: url('assets/images/angle-down-solid-white.svg');
+}
+[data-mobile-nav-style=full-screen-menu] .dropdown-toggle:before {
+    background-image: url('assets/images/angle-down-solid-white.svg');
+}
+
+/* Like icon */
+.blog-grid .post-meta-like .icon-feather-heart:before,
+.crafto-blog-list .post-meta-like .blog-like .icon-feather-heart:before {
+    content: "";
+    background-image: url('assets/images/heart.svg');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    text-indent: -99999px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+.blog-grid .post-meta-like .icon-feather-heart-on:before,
+.crafto-blog-list .post-meta-like .blog-like .icon-feather-heart-on:before {
+    content: "";
+    background-image: url('assets/images/heart-fill.svg');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    text-indent: -99999px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+.blog-grid .post-meta-like i,
+.crafto-blog-list .post-meta-like .blog-like i {
+    position: relative;
+    top: 2px;
+}
+
+/* Menu Animation Arrow */
+.simple-navigation-menu.animation-arrow-show li a:before {
+    content: "";
+    background-image: url('assets/images/arrow-right-short.svg');
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+    text-indent: -99999px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+[data-mobile-nav-style=modern] .simple-navigation-menu.animation-arrow-show li a:before {
+    background-image: url('assets/images/arrow-right-short-white.svg');
+}
+
+/* Woocommerce Info*/
+.woocommerce-account .woocommerce-form.woocommerce-form-register .woocommerce-info {
+    word-wrap: break-word;
+    display: inline-block;
+    text-align: left;
+    padding: 13px 30px 12px 45px;
+}
+.woocommerce-account .woocommerce-form.woocommerce-form-register .woocommerce-info::before {
+    display: inline-block;
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    font-size: 16px;
+}
+.woocommerce-account .woocommerce-form.woocommerce-form-register .woocommerce-Button[disabled] {
+    cursor: not-allowed;
+    filter: alpha(opacity = 65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .65;
+}
+.woocommerce-account .woocommerce-form.woocommerce-form-register .woocommerce-form-row .woocommerce-Button {
+    width: 100%;
+    padding: 11px 26px 15px 26px;
+}
+
+@-webkit-keyframes footeranimatedgradient {
+    0% {
+        background-position: 0 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    to {
+        background-position: 0 50%
+    }
+}
+
+/* Responsive CSS Here */
+@media (max-width: 991px) {
+    .page-id-27.elementor-page-27 .header-common-wrapper.navbar .menu-item-19 .megamenu-content > .elementor > .elementor-element,
+    .elementor-page-301 .header-common-wrapper.navbar .menu-item-19 .megamenu-content > .elementor > .elementor-element,
+    .elementor-page-5478 .header-common-wrapper.navbar .menu-item-19 .megamenu-content > .elementor > .elementor-element{
+        background-image: none;
+    }
+    .page-id-27.elementor-page-27 header .navbar .navbar-nav li .megamenu-content,
+    .elementor-page-301 header .navbar .navbar-nav li .megamenu-content,
+    .elementor-page-5478 header .navbar .navbar-nav li .megamenu-content {
+        background-color: rgb(21, 22, 29) !important;
+    }
+    .page-id-27 .navbar-nav .nav-item.full-width-megamenu .megamenu-content,
+    .elementor-page-301 .navbar-nav .nav-item.full-width-megamenu .megamenu-content,
+    .elementor-page-5478 .navbar-nav .nav-item.full-width-megamenu .megamenu-content {
+        box-shadow: none;
+    }
+    body.page-id-27 .navbar-collapse .navbar-nav .menu-item-19.nav-item.current-menu-item:hover > a {
+        color: #fff !important;
+    }
+    .elementor-page-301 .dropdown-toggle:before,
+    .page-id-5478 .dropdown-toggle:before {
+        background-image: url('assets/images/angle-down-solid-white.svg');
+    }
+}
+
+@media (max-width: 767px) {
+    .megamenu-content .features-color-box .elementor-widget-crafto-icon-box .crafto-image-box-img img {
+        margin: 0;
+    }
+    .page-id-27 .megamenu-content .features-color-box .elementor-widget-crafto-icon-box .elementor-icon-box-title,
+    .elementor-page-301 .megamenu-content .features-color-box .elementor-widget-crafto-icon-box .elementor-icon-box-title,
+    .elementor-page-5478 .megamenu-content .features-color-box .elementor-widget-crafto-icon-box .elementor-icon-box-title {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .megamenu-content .features-color-box .elementor-widget-crafto-icon-box .crafto-icon-box-wrapper:after,
+    .megamenu-content .features-color-box .elementor-widget-crafto-icon-box .crafto-image-box-wrapper:after {
+        right: 8px;
+        top: 9px;
+        width: 22px;
+        height: 22px;
+    }
+    .megamenu-content .features-color-box .elementor-widget-crafto-icon-box .elementor-icon-box-content {
+        padding-top: 10px;
+        padding-bottom: 8px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (min-height: 1200px) {
+    .landing-page-main-banner {
+        height: 100vh !important;
+    }
+}

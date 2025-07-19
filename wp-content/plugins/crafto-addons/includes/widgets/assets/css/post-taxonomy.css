@@ -1,0 +1,262 @@
+/* ===================================
+	Post Taxonomy
+====================================== */
+/* Taxonomy Style 01 */
+.post-taxonomy-style-1 {
+	display: flex;
+	flex-wrap: wrap;
+}
+.tags ul.post-taxonomy-style-1,
+.categories ul.post-taxonomy-style-1 {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.tags ul.post-taxonomy-style-1 li {
+	float: none;
+}
+.tags ul.post-taxonomy-style-1 li,
+.categories ul.post-taxonomy-style-1 li {
+	position: relative;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	width: auto;
+	line-height: inherit;
+}
+.tags ul.post-taxonomy-style-1 li a,
+.categories ul.post-taxonomy-style-1 li a {
+	display: inline-block;
+	text-align: center;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0 6px 10px 0;
+	padding: 7px 18px;
+	border-radius: 4px;
+	border: 1px solid #e4e4e4;
+}
+.tags ul.post-taxonomy-style-1 li a:hover,
+.categories ul.post-taxonomy-style-1 li a:hover {
+	color: var( --e-global-color-secondary, #232323 );
+	box-shadow: 0 0 10px rgba(23, 23, 23, 0.1);
+	background-color: #fff;
+}
+.categories ul.post-taxonomy-style-1 span,
+.tags ul.post-taxonomy-style-1 span {
+	position: inherit;
+	font-size: 13px;
+	top: 0;
+	line-height: normal;
+}
+
+/* Taxonomy Style 02 */
+.post-taxonomy-style-2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.categories .post-taxonomy-style-2 li,
+.tags .post-taxonomy-style-2 li {
+	padding: 0 15px;
+	margin: 0;
+	flex: 0 0 auto;
+	position: relative;
+	display: inline-block;
+}
+.categories .post-taxonomy-style-2 li {
+	margin-bottom: 30px;
+}
+.post-taxonomy-style-2 li {
+	width: 20%;
+}
+.post-taxonomy-style-2 .categories-box {
+	position: relative;
+	transition: all .4s cubic-bezier(.165,.84,.44,1);
+	overflow: hidden;
+	border-radius: 6px;
+}
+.post-taxonomy-style-2 .categories-image {
+	transform: scale(1);
+	transition: all .4s cubic-bezier(.165,.84,.44,1);
+	will-change: transform;
+}
+.post-taxonomy-style-2 .categories-image a {
+	display: block;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	border-radius: 0;
+	border: 0;
+	will-change: transform;
+}
+.post-taxonomy-style-2 .categories-box:hover {
+	transform: scale(1.05);
+}
+.post-taxonomy-style-2 .categories-box:hover .categories-image { 
+	transform: scale(1.1);
+}
+.post-taxonomy-style-2 .overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	opacity: 0.4;
+}
+.post-taxonomy-style-2 .category-title {
+	display: flex;
+	align-items: center;
+	padding: 30px 40px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+.post-taxonomy-style-2 .category-title .category {
+	font-size: 20px;
+	color: #fff;
+	margin:0 10px 0 0;
+	text-align: left;
+	line-height: 30px;
+	padding: 0;
+	border-radius: 0;
+	border: 0;
+	box-shadow: none;
+	background-color: transparent;
+}
+.post-taxonomy-style-2 .category-title .count-circle {
+	background-color: #B78057;
+	color: #fff;
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	flex-shrink: 0;
+}
+.post-taxonomy-style-2 .category-title .count-circle span {
+	position: static;
+	font-size: 14px;
+}
+
+/* Taxonomy Style 03 */
+.categories .post-taxonomy-style-3 li,
+.tags .post-taxonomy-style-3 li {
+	height: 80px;
+	display: flex;
+	position: relative;
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 0;
+}
+.post-taxonomy-style-3 .category-title {
+	height: 100%;
+}
+.post-taxonomy-style-3 .categories-box {
+	width: 100%;
+}
+.post-taxonomy-style-3 .category-title a,
+.tags .post-taxonomy-style-3 .category-title a,
+.categories .post-taxonomy-style-3 .category-title a {
+	font-size: 20px;
+	color: #fff;
+	font-weight: 600;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	position: relative;
+	box-shadow: none;
+	background-color: transparent;
+	padding: 0 35px;
+	margin: 0;
+	border: 0;
+}
+.post-taxonomy-style-3 .overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+}
+.post-taxonomy-style-3 .category-title .category-icon {
+	position: absolute;
+	top: inherit;
+	right: 25px;
+	font-size: 24px;
+	opacity: 0;
+	-webkit-transform: scale(.9);
+	transform: scale(.9);
+	-webkit-transition: all .3s cubic-bezier(.37,.8,.63,1);
+	transition: all .3s cubic-bezier(.37,.8,.63,1);
+}
+.post-taxonomy-style-3 .category-title .category-icon svg {
+	width: 1em;
+	height: auto;
+	fill: #fff;
+}
+.post-taxonomy-style-3 .category-title a:hover .category-icon {
+	right: 35px;
+	opacity: 1;
+}
+
+/* Taxonomy Style 04 */
+.categories ul.post-taxonomy-style-4,
+.tags ul.post-taxonomy-style-4 {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.categories ul.post-taxonomy-style-4 li,
+.tags ul.post-taxonomy-style-4 li {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 15px;
+	line-height: 18px;
+}
+.categories ul.post-taxonomy-style-4 li {
+	padding-left: 0;
+	padding-right: 0;
+}
+.categories ul.post-taxonomy-style-4 li:last-child,
+.tags ul.post-taxonomy-style-4 li:last-child {
+	margin-bottom: 0;
+}
+.categories ul.post-taxonomy-style-4 li a,
+.tags ul.post-taxonomy-style-4 li a {
+	display: inline-block;
+	text-align: left;
+	font-size: 16px;
+	line-height: 30px;
+	margin: 0;
+	padding: 0;
+	border-radius: 0;
+	border: 0;
+	background-color: transparent;
+	box-shadow: none;
+}
+.categories ul.post-taxonomy-style-4 li a:hover,
+.tags ul.post-taxonomy-style-4 li a:hover {
+	color: #2946f3;
+}
+.categories ul.post-taxonomy-style-4 li span,
+.tags ul.post-taxonomy-style-4 li span {
+	font-size: 14px;
+	position: absolute;
+	top: 1px;
+	right: 0;
+	text-align: right;
+}
+
+/* Responsive CSS Here */
+@media (max-width: 1199px) {
+	.post-taxonomy-style-2 .category-title {
+		padding: 20px;
+	}
+}

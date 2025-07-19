@@ -1,0 +1,425 @@
+/* ===================================
+	Post Single Page - Comment Form
+====================================== */
+.default-top-space-main-section .crafto-related-posts-wrap + .crafto-comments-wrap {
+	padding-top: 110px;
+}
+.crafto-related-posts-wrap + .crafto-comments-wrap {
+	padding-top: 110px;
+}
+.elementor-element .crafto-related-posts-wrap + .crafto-comments-wrap {
+	padding-top: 0;
+}
+.crafto-comments-wrap .crafto-comment-form .submit {
+	font-size: 12px;
+	padding: 10px 26px;
+	margin: 0;
+	border-width: 2px;
+	border-color: var( --e-global-color-secondary, #232323 );
+	line-height: 2;
+	text-transform: uppercase;
+}
+body:not(.elementor-page) .crafto-page-main-section+.crafto-comments-wrap {
+	padding-top: 0;
+}
+body:not(.elementor-page) .elementor-element .crafto-comments-wrap {
+	padding: 0;
+}
+.crafto-comments-wrap .crafto-comment-form label {
+	width: 85%;
+	line-height: 22px;
+	font-size: 16px;
+	font-family: inherit;
+	font-weight: 400;
+	display: block;
+	vertical-align: top;
+	margin-bottom: 15px;
+}
+.crafto-comments-wrap .comments,
+.crafto-comments-wrap .comment-respond {
+	width: 100%;
+}
+.crafto-comments-wrap .comment-reply-title {
+	margin-bottom: 5px;
+	font-weight: 500;
+	letter-spacing: normal;
+}
+.crafto-comments-wrap .comment-reply-title small {
+	font-size: 14px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 0 1px 8px;
+}
+.crafto-comments-wrap .comment-reply-title small a {
+	color: red;
+}
+.crafto-comments-wrap .crafto-comment-form .comment-notes {
+	margin-bottom: 3%;
+	font-size: 16px;
+	line-height: 32px;
+}
+.crafto-comments-wrap .crafto-comment-form .row>* {
+	margin-bottom: 30px;
+}
+.crafto-comments-wrap .crafto-comment-form .row>.comment-button,
+.crafto-comments-wrap .crafto-comment-form .row input,
+.crafto-comments-wrap .crafto-comment-form .row select {
+	margin-bottom: 0;
+}
+.crafto-comments-wrap .crafto-comment-form .row>.comment-form-comment {
+	margin-bottom: 20px;
+}
+.crafto-comments-wrap .crafto-comment-form input,
+.crafto-comments-wrap .crafto-comment-form textarea,
+.crafto-comments-wrap .crafto-comment-form select {
+	padding: 12px 25px;
+	width: 100%;
+	max-width: 100%;
+	resize: none;
+	outline: none;
+	font-size: 16px;
+	border: 1px solid #e4e4e4;
+	color: #868d98;
+	line-height: inherit;
+	word-break: normal;
+	transition: 0.3s;
+	border-radius: 4px;
+	background-color: #fff;
+	font-weight: 400;
+}
+.crafto-comments-wrap .crafto-comment-form input:focus,
+.crafto-comments-wrap .crafto-comment-form textarea:focus,
+.crafto-comments-wrap .crafto-comment-form select:focus {
+	border-color: #c2c2c2;
+}
+.crafto-comments-wrap .crafto-comment-form input.inputerror,
+.crafto-comments-wrap .crafto-comment-form textarea.inputerror,
+.crafto-comments-wrap .crafto-comment-form select.inputerror {
+	border-color: #dc3545;
+}
+.crafto-comments-wrap .crafto-comment-form input::-webkit-input-placeholder,
+.crafto-comments-wrap .crafto-comment-form textarea::-webkit-input-placeholder,
+.crafto-comments-wrap .crafto-comment-form select::-webkit-input-placeholder {
+	color: #868d98;
+	text-overflow: ellipsis;
+}
+.crafto-comments-wrap .crafto-comment-form input::-moz-placeholder,
+.crafto-comments-wrap .crafto-comment-form textarea::-moz-placeholder,
+.crafto-comments-wrap .crafto-comment-form select::-moz-placeholder {
+	color: #868d98;
+	text-overflow: ellipsis;
+	opacity:1;
+}
+.crafto-comments-wrap .crafto-comment-form input:-ms-input-placeholder,
+.crafto-comments-wrap .crafto-comment-form textarea:-ms-input-placeholder,
+.crafto-comments-wrap .crafto-comment-form select:-ms-input-placeholder {
+	color: #868d98;
+	text-overflow: ellipsis;
+	opacity:1;
+}
+.crafto-comments-wrap .crafto-comment-form textarea {
+	height: 160px;
+	vertical-align: top;
+	margin-bottom: 0;
+}
+.crafto-comments-wrap .crafto-comment-form .comment-form-cookies-consent {
+	display: flex;
+	margin-bottom: 0;
+	align-items: baseline;
+}
+.crafto-comments-wrap .crafto-comment-form .comment-form-cookies-consent input[type="checkbox"] {
+	width: auto;
+	margin-right: 8px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	box-shadow: none;
+}
+.crafto-comments-wrap .crafto-comment-form .comment-form-cookies-consent label {
+	margin: 0;
+}
+.crafto-comments-wrap .crafto-comment-form input[type="submit"],
+.crafto-comments-wrap .crafto-comment-form button {
+	width: auto;
+	border-radius: 4px;
+	font-size: 15px;
+	padding: 15px 26px 15px;
+	border-width: 2px;
+	border-color: var( --e-global-color-secondary, #232323 );
+	cursor: pointer;
+	font-weight: 500;
+	background-color: var( --e-global-color-secondary, #232323 );
+	color: #fff;
+	transition: all 300ms ease-in-out;
+	line-height: initial;
+}
+.crafto-comments-wrap .crafto-comment-form input[type="submit"]:hover,
+.crafto-comments-wrap .crafto-comment-form button:hover {
+	background-color: transparent;
+	color: var( --e-global-color-secondary, #232323 );
+}
+.crafto-comments-wrap .comments .comments-header {
+	padding: 0 15px;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 2.7%;
+}
+.crafto-comments-wrap .blog-comment {
+	margin: 0 0 110px;
+	padding: 0;
+	list-style: none;
+}
+.crafto-comments-wrap .blog-comment li {
+	padding-bottom: 65px;
+	position: relative;
+}
+.crafto-comments-wrap .blog-comment li .comment-author-wrapper {
+	position: relative;
+}
+.crafto-comments-wrap .blog-comment>li:first-child {
+	padding-top: 0;
+}
+.crafto-comments-wrap .blog-comment li:last-child {
+	padding-bottom: 0;
+}
+.crafto-comments-wrap .blog-comment li ul.children {
+	list-style: none;
+	margin-left: 70px;
+	padding-left: 2rem;
+	margin-bottom: 0;
+}
+.crafto-comments-wrap .blog-comment li ul.children li {
+	margin-top: 60px;
+	padding-bottom: 0;
+}
+.crafto-comments-wrap .blog-comment li ul.children li:last-child {
+	background-color: #f7f7f7;
+	border-radius: 5px;
+	padding: 50px;
+}
+.crafto-comments-wrap .blog-comment li .comment-image-box {
+	width: 90px;
+	margin-right: 30px;
+}
+.crafto-comments-wrap .blog-comment li .comment-image-box img {
+	border-radius: 100%;
+	width: 100%;
+	height: auto;
+}
+.crafto-comments-wrap .blog-comment li .comment-text-box {
+	padding-left: 0;
+	width: calc(100% - 120px);
+}
+.crafto-comments-wrap .blog-comment li .comment-author-wrapper .alert-warning {
+	margin-top: 15px;
+	color: green;
+	display: block;
+	width: 100%;
+	text-align: right;
+}
+.crafto-comments-wrap .blog-comment li .comment-author-wrapper .alert-warning.comment-awaiting-moderation {
+	text-align: center;
+	padding: 5px 15px;
+}
+.crafto-comments-wrap .blog-comment li .comment-text-box p:last-child {
+	margin-bottom: 0;
+}
+.crafto-comments-wrap .blog-comment li .comment-text-box .comment-title-edit-link a {
+	font-weight: 500;
+	color: var( --e-global-color-secondary, #232323 );
+	font-size: 16px;
+	line-height: 32px;
+	text-decoration: none;
+}
+.crafto-comments-wrap .blog-comment li .comment-text-box .comment-title-edit-link a:hover {
+	color: #2946f3;
+}
+.crafto-comments-wrap .blog-comment li .comment-text-box .comment-title-edit-link a.comment-edit-link {
+	text-decoration: underline;
+}
+.crafto-comments-wrap .blog-comment li .comment-text-box .comment-title-edit-link a.comment-edit-link:hover {
+	text-decoration: none;
+}
+.crafto-comments-wrap .blog-comment li .comment-text-box .comment-reply-link {
+	float: right;
+	margin-top: 0;
+	font-size: 11px;
+	line-height: initial;
+	text-transform: uppercase;
+	padding: 7px 20px 6px;
+	border-radius: 50px;
+	border: 1px solid rgba(44, 44, 44, 0.25);
+	background-color: #fff;
+	text-decoration: none;
+}
+.crafto-comments-wrap .blog-comment li .comment-text-box .comment-reply-link:hover {
+	border-color: #2946f3;
+	background: #2946f3;
+	color: #fff;
+}
+.crafto-comments-wrap .blog-comment li .comment-text-box .comments-date {
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 10px;
+}
+.crafto-comments-wrap .blog-comment li .comment-text-box .comment-text {
+	width: 85%;
+	font-size: 16px;
+	line-height: 32px;
+}
+.crafto-comments-wrap .blog-comment li .comment-text-box .comment-title-edit-link {
+	display: inline;
+}
+.crafto-comments-wrap .comments .comment-respond {
+	padding: 130px 0 0 0;
+}
+.crafto-comments-wrap .blog-comment li .comment-respond {
+	padding: 60px 0 0 0;
+}
+.crafto-comments-wrap .crafto-comment-form .logged-in-as {
+	font-size: 16px;
+	line-height: 32px;
+}
+.crafto-comments-wrap .crafto-comment-form .logged-in-as a {
+	text-decoration: underline;
+}
+.crafto-comments-wrap .crafto-comment-form .logged-in-as a:hover {
+	text-decoration: none;
+}
+.crafto-comments-wrap .comment-respond .comment-reply-title {
+	color: var( --e-global-color-secondary, #232323 );
+	margin-bottom: 7px;
+	font-weight: 500;
+	padding: 0;
+	text-align: left;
+	letter-spacing: normal;
+}
+.crafto-comments-wrap .crafto-comment-form .submit {
+	margin-top: 30px;
+}
+.crafto-comments-wrap .comments .comment-reply-title {
+	text-align: center;
+	color: var( --e-global-color-secondary, #232323 );
+	font-weight: 500;
+	margin-bottom: 25px;
+}
+.crafto-comments-wrap .blog-comment li.bypostauthor,
+.crafto-comments-wrap .blog-comment li ul.children li.bypostauthor {
+	background-color: #f7f7f7;
+	border-radius: 5px;
+	padding: 40px;
+	margin-bottom: 30px;
+}
+.crafto-comments-wrap .blog-comment li.bypostauthor:last-child,
+.crafto-comments-wrap .blog-comment li ul.children li.bypostauthor:last-child {
+	margin-bottom: 0;
+}
+.crafto-comments-wrap {
+	padding-bottom: 110px;
+}
+.elementor-element .crafto-comments-wrap {
+	padding-bottom: 0;
+}
+
+/* Responsive CSS Here */
+@media (max-width: 1600px) {
+	body:not(.elementor-page) .crafto-comments-wrap {
+		padding-top: 90px;
+		padding-bottom: 90px;
+	}
+	.crafto-comments-wrap .blog-comment {
+		margin: 0 0 90px;
+	}
+}
+
+@media (max-width: 1199px) {
+	.crafto-related-posts-wrap + .crafto-comments-wrap,
+	.default-top-space-main-section .crafto-related-posts-wrap + .crafto-comments-wrap{
+		padding-top: 90px;
+	}
+	.crafto-comments-wrap {
+		padding-bottom: 90px;
+	}
+}
+
+@media (max-width: 991px) {
+	.crafto-related-posts-wrap + .crafto-comments-wrap,
+	.default-top-space-main-section .crafto-related-posts-wrap + .crafto-comments-wrap{
+		padding-top: 75px;
+	}
+	body:not(.elementor-page) .crafto-comments-wrap {
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+	.crafto-comments-wrap .comments,
+	.crafto-comments-wrap .comment-respond {
+		padding: 0;
+	}
+	.crafto-comments-wrap .blog-comment li ul.children li:last-child {
+		padding: 30px;
+	}
+	.crafto-comments-wrap .blog-comment {
+		margin: 0 0 75px;
+	}
+	.crafto-comments-wrap {
+		padding-bottom: 75px;
+	}
+}
+
+@media (max-width: 767px) {
+	.crafto-related-posts-wrap + .crafto-comments-wrap,
+	.default-top-space-main-section .crafto-related-posts-wrap + .crafto-comments-wrap{
+		padding-top: 50px;
+	}
+	body:not(.elementor-page) .crafto-comments-wrap {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.crafto-comments-wrap .crafto-comment-form label {
+		width: 100%;
+	}
+	.crafto-comments-wrap .blog-comment li .comment-image-box {
+		width: 65px;
+		margin: 0 0 10px 0;
+	}
+	.crafto-comments-wrap .blog-comment li .comment-text-box,
+	.crafto-comments-wrap .blog-comment li .comment-text-box .comment-text {
+		width: 100%;
+	}
+	.crafto-comments-wrap .blog-comment li ul.children li {
+		margin-top: 45px;
+	}
+	.crafto-comments-wrap .blog-comment li ul.children li:last-child {
+		padding: 20px;
+	}
+	.crafto-comments-wrap .blog-comment li {
+		padding-bottom: 50px;
+	}
+	.crafto-comments-wrap .blog-comment {
+		margin: 0 0 50px;
+	}
+	.crafto-comments-wrap .crafto-comment-form .row>* {
+		margin-bottom: 25px;
+	}
+	.crafto-comments-wrap .crafto-comment-form .comment-form-cookies-consent {
+		margin-bottom: 0;
+	}
+	.crafto-comments-wrap .comments .comment-reply-title {
+		margin-bottom: 25px;
+	}
+	.crafto-comments-wrap {
+		padding-bottom: 50px;
+	}
+}
+
+@media (max-width: 575px) {
+	.crafto-comments-wrap .blog-comment li ul.children {
+		list-style: none;
+		margin-left: 20px;
+		padding-left: 20px;
+	}
+	.crafto-comments-wrap .blog-comment li.bypostauthor,
+	.crafto-comments-wrap .blog-comment li ul.children li.bypostauthor {
+		padding: 30px;
+	}
+}

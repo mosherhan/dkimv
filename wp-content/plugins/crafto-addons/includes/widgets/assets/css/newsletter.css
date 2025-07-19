@@ -1,0 +1,268 @@
+/* ===================================
+	Newsletter
+====================================== */
+.elementor-widget-crafto-newsletter .crafto-show-popup {
+	display: block;
+	margin-top: 5px;
+	font-size: 15px;
+}
+.elementor-widget-crafto-newsletter .crafto-show-popup .crafto-promo-show-popup {
+	width: auto;
+	margin-right: 10px;
+	position: relative;
+	top: -1px;
+}
+.elementor-widget-crafto-newsletter input::-webkit-input-placeholder,
+.elementor-widget-crafto-newsletter input::-moz-placeholder,
+.elementor-widget-crafto-newsletter input:-ms-input-placeholder {
+	color: #828282;
+}
+.newsletter-style-1 form input.is-invalid,
+.newsletter-style-2 form input.is-invalid,
+.newsletter-style-3 form input.is-invalid {
+	border-color: #ff0202 !important;
+}
+.newsletter-style-1 button[type="submit"] .submit-icon.icon-right,
+.newsletter-style-2 button[type="submit"] .submit-icon.icon-right,
+.newsletter-style-3 button[type="submit"] .submit-icon.icon-right {
+	order: 2;
+}
+.newsletter-style-1 button[type="submit"] svg,
+.newsletter-style-2 button[type="submit"] svg,
+.newsletter-style-3 button[type="submit"] svg {
+	fill: #fff;
+	width: 24px;
+}
+.newsletter-style-1 button[type="submit"] .submit-icon.icon-right i + .submit-text,
+.newsletter-style-2 button[type="submit"] .submit-icon.icon-right i + .submit-text,
+.newsletter-style-3 button[type="submit"] .submit-icon.icon-right i + .submit-text,
+.newsletter-style-1 button[type="submit"] .submit-icon.icon-right svg + .submit-text,
+.newsletter-style-2 button[type="submit"] .submit-icon.icon-right svg + .submit-text,
+.newsletter-style-3 button[type="submit"] .submit-icon.icon-right svg + .submit-text{
+	margin-right: 3px;
+	margin-left: 0 !important;
+}
+.newsletter-style-1 button[type="submit"] .submit-text,
+.newsletter-style-2 button[type="submit"] .submit-text,
+.newsletter-style-3 button[type="submit"] .submit-text {
+	order: 1;
+}
+form.form-submitting button[type="submit"] .submit-icon,
+form.form-submitting button[type="submit"] .submit-text {
+	opacity: 0;
+	visibility: hidden;
+}
+.elementor-widget-crafto-newsletter .newsletter-wrap {
+	position: relative;
+}
+.newsletter-spinner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+.form-submitting .newsletter-spinner {
+	visibility: visible;
+	opacity: 1;
+}
+.newsletter-spinner::after {
+	background: 0 0;
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -15px 0 0 -15px;
+	opacity: 1;
+	right: inherit;
+	z-index: 9;
+	text-align: center;
+	border: 2px solid hsla(0,0%,85%,.4);
+	border-top-color: #828282;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	animation: spin 1s linear infinite;
+}
+.newsletter-spinner span {
+	display: none !important;
+}
+.newsletter-checkbox {
+	display: flex;
+	align-items: center;
+	margin-top: 12px;
+}
+.elementor-widget-crafto-newsletter form .newsletter-checkbox input[type="checkbox"] {
+	padding: 0;
+	width: auto;
+	border: 0;
+	margin: 0 7px 0 0;
+	border-radius: 0;
+	box-shadow: none;
+	background-color: transparent;
+}
+.elementor-widget-crafto-newsletter form .newsletter-checkbox input[type="checkbox"].is-invalid {
+	box-shadow: 0 0 1px 1px #ff0202;
+}
+.elementor-widget-crafto-newsletter form .newsletter-checkbox .newslleter-gdpr {
+	font-size: 14px;
+}
+
+/* Loader */
+@keyframes spin {
+	to {
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+/* Newsletter Style 01 */
+.newsletter-style-1 form {
+	position: relative;
+}
+.newsletter-style-1 form input {
+	border-radius: 4px;
+	padding: 16px 160px 16px 32px;
+	border: 1px solid #fff;
+	color: #828282;
+	background-color: #fff;
+	margin: 0;
+	font-size: 16px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .08);
+}
+.newsletter-style-1 form button[type="submit"] {
+	position: absolute;
+	height: 100%;
+	right: 0;
+	top: 0;
+	border-radius: 0 4px 4px 0;
+	font-size: 14px;
+	padding: 18px 34px 19px;
+	background-color: var( --e-global-color-secondary, #232323 );
+	color: #fff;
+	letter-spacing: .5px;
+	font-weight: 500;
+	border: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.newsletter-style-1 form button[type="submit"] .icon-left + .submit-text {
+	margin-left: 3px;
+}
+.newsletter-style-1 form button[type="submit"] .icon-right + .submit-text {
+	margin-right: 3px;
+}
+.newsletter-style-1 form button[type="submit"]:hover {
+	background-color: #828282;
+}
+.newsletter-style-1 form button[type="submit"] .submit-icon {
+	vertical-align: top;
+	line-height: normal;
+}
+
+.newsletter-style-1 form button[type="submit"] i,
+.newsletter-style-1 form button[type="submit"] svg {
+	vertical-align: middle;
+	line-height: 0;
+}
+.newsletter-style-1 form button[type="submit"] svg {
+	transition: all 0.3s ease-in-out;
+}
+
+/* Newsletter Style 02 */
+.newsletter-style-2 form {
+	position: relative;
+}
+.newsletter-style-2 form input {
+	border-radius: 0;
+	padding: 16px 120px 16px 0;
+	font-size: 16px;
+	color: #828282;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid var( --e-global-color-secondary, #232323 );
+	margin: 0;
+}
+.newsletter-style-2 form button[type="submit"] {
+	background-color: transparent;
+	border: 0;
+	border-radius: 0;
+	color: var( --e-global-color-secondary, #232323 );
+	cursor: pointer;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 11px 0 12px;
+	height: 100%;
+}
+.newsletter-style-2 form button[type="submit"] i {
+	font-size: 18px;
+}
+.newsletter-style-2 form button[type="submit"]:hover,
+.newsletter-style-2 form button[type="submit"]:focus {
+	background-color: transparent;
+	color: #828282;
+}
+.newsletter-style-2 form button[type="submit"] .icon-left + .submit-text {
+	margin-left: 3px;
+}
+.newsletter-style-2 form button[type="submit"] .icon-right + .submit-text {
+	margin-right: 3px;
+}
+
+/* Newsletter Style 03 */
+.newsletter-style-3 form {
+	position: relative;
+}
+.newsletter-style-3 input {
+	border-radius: 4px;
+	padding: 12px 25px;
+	font-size: 16px;
+	border: 1px solid #e4e4e4;
+	color: #828282;
+	margin-bottom: 25px;
+}
+.newsletter-style-3 input:focus {
+	border-color: #c2c2c2;
+}
+.newsletter-style-3 button[type="submit"] {
+	border-radius: 4px;
+	background-color: var( --e-global-color-secondary, #232323 );
+	border: 2px solid var( --e-global-color-secondary, #232323 );
+	color: #fff;
+	cursor: pointer;
+	padding: 18px 34px;
+	opacity: 1;
+	width: 100%;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: .5px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.newsletter-style-3 button[type="submit"]:hover {
+	transform: translate3d(0, -2px, 0);
+	box-shadow: 0 8px 30px 0 rgba(0, 0, 0, .15);
+}
+.newsletter-style-3 form button[type="submit"] .icon-left + .submit-text {
+	margin-left: 3px;
+}
+.newsletter-style-3 form button[type="submit"] .icon-right + .submit-text {
+	margin-right: 3px;
+}
+.newsletter-style-3 .newsletter-checkbox {
+	margin: 0 0 25px 0;
+}

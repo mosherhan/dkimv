@@ -1,0 +1,1035 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Crafto
+Theme URI: https://crafto.themezaa.com
+Author: ThemeZaa
+Author URI: https://www.themezaa.com
+Description: Crafto is a powerful, AI-driven Elementor WordPress theme with 48+ pre-built websites, SEO optimization, and lightning-fast performance. Build with ease!
+Requires at least: 6.4
+Tested up to: 6.8
+Requires PHP: 8.0
+Version: 1.2
+License: Themeforest Split Licence
+License URI: https://themeforest.net/licenses/
+Text Domain: crafto
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, grid-layout, custom-background, custom-colors, flexible-header, custom-menu, editor-style, featured-images, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, blog, e-commerce
+*/
+
+/* Table of contents
+	01. Reset
+	02. Search No Results
+	03. Box Layout
+	04. Bootstrap
+	05. Full Screen
+	06. WP Captions
+	07. Align
+	08. Slider
+	09. Parallax
+	10. Icon
+	11. Breadcrumb
+	12. Title
+	13. Pagination
+	14. Infinite Scroll
+	15. Load More
+	16. Overlay
+	17. Social icons
+	18. Categories
+	19. Tags
+	20. Tag Cloud
+	21. Accessibility
+	22. Single Post
+	23. Blocks Gallery Grid
+	24. Loading
+	25. Section Animation
+*/
+
+/* ===================================
+	01. Reset
+====================================== */
+html {
+	font-size: 16px;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: 400;
+	color: #828282;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-tap-highlight-color: transparent;
+	word-break: break-word;
+	background-color: #fff;
+}
+html,
+body {
+	overflow-x: clip;
+}
+input,
+textarea,
+select {
+	border: 1px solid #dfdfdf;
+	padding: 8px 15px;
+	width: 100%;
+	margin: 0 0 15px 0;
+	max-width: 100%;
+	resize: none;
+	outline: none;
+	color: var( --e-global-color-secondary, #232323 );
+	font-size: 14px;
+	line-height: inherit;
+	transition: all 0.3s ease-in-out;
+	font-family: inherit;
+}
+input:focus,
+textarea:focus {
+	border: 1px solid #b9b9b9;
+	outline: none;
+}
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+	opacity: 1;
+}
+input[type="submit"] {
+	cursor: pointer;
+	text-align: center;
+	outline: none;
+	letter-spacing: normal;
+	line-height: 1.5;
+	color: #fff;
+	border: 2px solid var( --e-global-color-secondary, #232323 );
+	background-color: var( --e-global-color-secondary, #232323 );
+	border-radius: 0;
+	width: auto;
+	font-weight: 500;
+	padding: 5px 18px;
+	box-shadow: none;
+	white-space: nowrap;
+	text-decoration: none;
+}
+input[type="submit"]:hover {
+	background-color: transparent;
+	color: #fff;
+}
+input[type="checkbox"],
+input[type="radio"] {
+	width: auto;
+	margin: 10px 8px 0 0;
+	padding: 0;
+	float: left;
+	position: unset;
+	max-width: unset;
+}
+.crafto-button-wrapper {
+	position: relative;
+}
+select::-ms-expand {
+	display: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	letter-spacing: -0.5px;
+	font-weight: inherit;
+	margin-bottom: 30px;
+}
+h1 {
+	font-size: 4.375rem;
+	line-height: 4.375rem;
+}
+h2 {
+	font-size: 3.438rem;
+	line-height: 3.438rem;
+}
+h3 {
+	font-size: 2.813rem;
+	line-height: 3.125rem;
+}
+h4 {
+	font-size: 2.375rem;
+	line-height: 2.7rem;
+}
+h5 {
+	font-size: 2rem;
+	line-height: 2.2rem;
+}
+h6 {
+	font-size: 1.75rem;
+	line-height: 1.95rem;
+}
+b,
+strong {
+	font-weight: 600;
+}
+body.elementor-page b,
+body.elementor-page strong {
+	font-weight: 700;
+}
+small {
+	font-size: smaller;
+}
+p {
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+p:empty,
+ul:empty {
+	display: none;
+}
+ul,
+ol,
+dl {
+	margin-bottom: 25px;
+}
+dd {
+	margin-left: 40px;
+}
+a {
+	transition: all 0.3s ease-in-out;
+	outline: none;
+	text-decoration: none;
+	color: #2946f3;
+}
+a:hover {
+	text-decoration: none;
+	color: #2946f3;
+}
+input[type="submit"],
+button[type="submit"] {
+	transition: all 0.3s ease-in-out;
+}
+.cover-background {
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+	background-position: center center;
+}
+img {
+	height: auto;
+	max-width: 100%;
+}
+img,
+svg {
+	vertical-align: middle;
+}
+body:not(.elementor-page) .image-wrapper img {
+	width: 100%;
+}
+body:not(.elementor-page) h1,
+body:not(.elementor-page) h2,
+body:not(.elementor-page) h3,
+body:not(.elementor-page) h4,
+body:not(.elementor-page) h5,
+body:not(.elementor-page) h6 {
+	margin: 0 0 25px;
+}
+body.page-template-default:not(.elementor-page) h1,
+body.page-template-default:not(.elementor-page) h2,
+body.page-template-default:not(.elementor-page) h3,
+body.page-template-default:not(.elementor-page) h4,
+body.page-template-default:not(.elementor-page) h5,
+body.page-template-default:not(.elementor-page) h6 {
+	color: var( --e-global-color-secondary, #232323 );
+}
+iframe,
+video {
+	border: 0;
+	vertical-align: middle;
+}
+table {
+	margin-bottom: 30px;
+	border: 1px solid #e8e8e8;
+	width: 100%;
+	caption-side: bottom;
+	border-collapse: collapse;
+}
+table th {
+	border-bottom: 1px solid #e8e8e8;
+	font-weight: 500;
+	font-size: 15px;
+	padding: 10px 15px;
+	color: var( --e-global-color-secondary, #232323 );
+	border-right: 1px solid #e8e8e8;
+}
+table td {
+	border-bottom: 1px solid #e8e8e8;
+	font-style: normal;
+	padding: 10px 15px;
+	font-size: 15px;
+	border-right: 1px solid #e8e8e8;
+}
+table td a,
+.default-page-main-section a {
+	text-decoration: underline;
+}
+table td a:hover,
+.default-page-main-section a:hover {
+	text-decoration: none;
+}
+
+/* ===================================
+	02. Search No Results
+====================================== */
+.search-no-results .crafto-default-main-section {
+	padding-top: 110px;
+}
+
+/* ===================================
+	03. Box Layout
+====================================== */
+.box-layout {
+	padding: 0 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ===================================
+	04. Bootstrap
+====================================== */
+.container-fluid {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.row {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.row>* {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.row>*.p-0 {
+	padding: 0 !important;
+}
+.container-fluid-with-padding {
+	padding-left: 6%;
+	padding-right: 6%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ===================================
+	05. Full Screen
+====================================== */
+.full-screen,
+.full-screen.e-con,
+.full-screen-slide.swiper,
+.full-screen-slide.swiper-container {
+	height: 100vh;
+}
+
+/* ===================================
+	06. WP Captions
+====================================== */
+.wp-caption figcaption {
+	padding: 18px 0 0;
+}
+.wp-caption img {
+	width: 100%;
+	margin: 0;
+}
+
+/* ===================================
+	07. Align
+====================================== */
+.alignright {
+	float: right;
+	margin-left: 20px;
+}
+.alignleft {
+	float: left;
+	margin-right: 20px;
+}
+img.alignright {
+	margin-bottom: 20px;
+	margin-top: 5px;
+}
+img.alignleft {
+	margin-bottom: 20px;
+	margin-top: 5px;
+}
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin: 5px auto 25px auto;
+	text-align: center;
+}
+img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.alignwide {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+.alignfull {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.alignfull img {
+	width: 100%;
+}
+
+/* ===================================
+	08. Slider
+====================================== */
+.swiper-slide.slider-width-auto {
+	width: auto;
+}
+.swiper-container {
+	overflow: hidden;
+}
+body:not(.crafto-theme-ready) .swiper-slide {
+	opacity: 0;
+	visibility: hidden;
+}
+
+/* ===================================
+	09. Parallax
+====================================== */
+.parallax,
+.has-parallax-background {
+	position: relative !important;
+	background-size: cover !important;
+	overflow: hidden;
+	background-attachment: fixed !important;
+	transition-duration: 0s !important;
+}
+.e--ua-isTouchDevice [data-parallax-background-ratio] {
+	background-attachment: inherit !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+}
+
+/* ===================================
+	10. Icon
+====================================== */
+[class*=line-icon],
+[class*=" line-icon"],
+[class*=bi-],
+[class*=solid-icon-],
+[class*=" icon-feather-"],
+[class^=icon-feather-],
+[class*=ti-],
+[class*=icon-simple-] {
+	display: inline-block;
+}
+
+/* ===================================
+	11. Breadcrumb
+====================================== */
+.crafto-main-title-breadcrumb {
+	padding: 0;
+	margin: 0;
+	line-height: normal;
+}
+.crafto-main-title-breadcrumb li {
+	display: inline-block;
+}
+.crafto-main-title-breadcrumb>li:after {
+	content: "\e844";
+	font-family: "feather";
+	font-weight: 900;
+	font-size: 13px;
+	padding: 0 8px 0 9px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.crafto-main-title-breadcrumb li:last-child:after {
+	content: "";
+	padding: 0;
+}
+.crafto-main-title-breadcrumb li,
+.crafto-main-title-breadcrumb li a {
+	font-size: 13px;
+	line-height: 22px;
+}
+.default-main-title-wrapper .crafto-main-title-breadcrumb li a:hover {
+	color: var( --e-global-color-secondary, #232323 );
+}
+.main-breadcrumb-section {
+	border-bottom: 1px solid #ededed;
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+
+/* ===================================
+	12. Title
+====================================== */
+.default-main-title-wrapper .crafto-main-title-wrap {
+	background-color: #f7f7f7;
+	overflow: hidden;
+	position: relative;
+	background-size: cover;
+	background-position: top center;
+	padding: 40px 0;
+}
+.default-main-title-wrapper .crafto-main-title-wrap .crafto-main-title {
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 500;
+	margin: 0;
+	color: var( --e-global-color-secondary, #232323 );
+}
+
+/* ===================================
+	13. Pagination
+====================================== */
+.crafto-pagination {
+	margin-top: 5rem;
+	display: flex;
+}
+.crafto-pagination .page-numbers {
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	letter-spacing: initial;
+}
+.crafto-pagination .page-numbers li {
+	display: inline-block;
+}
+.crafto-pagination .page-numbers li,
+.crafto-pagination .page-numbers li .page-numbers {
+	font-size: 13px;
+	line-height: 22px;
+	margin: 0 5px;
+}
+.crafto-pagination .page-numbers li .page-numbers i,
+.crafto-pagination .page-numbers li .page-numbers svg {
+	margin: 0 3px 1px;
+	font-size: 18px;
+	vertical-align: middle;
+}
+.crafto-pagination .page-numbers li .page-numbers,
+.page-links .inner-page-links .post-page-numbers {
+	line-height: 45px;
+	border: 0;
+	padding: 0 2px;
+	margin: 0;
+	background-color: transparent;
+	min-width: 45px;
+	min-height: 45px;
+	text-align: center;
+	border-radius: 100%;
+	position: relative;
+	display: block;
+	text-decoration: none;
+}
+.crafto-pagination .page-numbers li .page-numbers.next,
+.crafto-pagination .page-numbers li .page-numbers.prev {
+	font-size: 13px;
+	background-color: transparent !important;
+}
+.crafto-pagination .page-numbers li .page-numbers.dots {
+	transition: all 0.3s ease-in-out;
+}
+.page-links .inner-page-links .pagination-title {
+	margin-right: 10px;
+}
+.page-links .inner-page-links .post-page-numbers {
+	display: inline-block;
+	margin: 0 5px;
+}
+.page-links .inner-page-links a:hover,
+.crafto-pagination .page-numbers li a:hover {
+	background-color: #fff;
+	color: var( --e-global-color-secondary, #232323 );
+	box-shadow: 0 0 10px rgba(23, 23, 23, .15);
+}
+.crafto-pagination .page-numbers li .page-numbers.current,
+.page-links .inner-page-links .post-page-numbers.current {
+	box-shadow: 0 0 10px rgba(23, 23, 23, .15);
+	background-color: var( --e-global-color-secondary, #232323 );
+	color: #fff;
+}
+.page-links {
+	clear: both;
+	padding-top: 25px;
+	text-align: center;
+}
+.crafto-pagination .page-numbers li .dots:hover,
+.crafto-pagination .page-numbers li .prev:hover,
+.crafto-pagination .page-numbers li .next:hover {
+	background-color: transparent;
+	box-shadow: none;
+}
+.crafto-pagination a {
+	color: var( --e-global-color-text, #828282 );
+	font-size: 13px;
+}
+.crafto-pagination .old-post {
+	margin-left: auto;
+}
+.crafto-pagination .old-post a i {
+	margin: 0 0 1px 3px;
+	vertical-align: middle;
+}
+.crafto-pagination .new-post {
+	margin-right: auto;
+}
+.crafto-pagination .new-post a i {
+	margin: 0 3px 1px 0;
+	vertical-align: middle;
+}
+.post-pagination {
+	display: flex;
+	margin: 50px auto;
+	padding: 20px 0 0 0;
+	border-top: 1px solid #e4e4e4;
+	width: calc(100% - 30px);
+}
+.post-pagination a {
+	color: #828282;
+	font-size: 13px;
+}
+.post-pagination .old-post {
+	margin-left: auto;
+}
+.post-pagination .old-post a i {
+	margin: 0 0 1px 3px;
+	vertical-align: middle;
+}
+.post-pagination .new-post {
+	margin-right: auto;
+}
+.post-pagination .new-post a i {
+	margin: 0 3px 1px 0;
+	vertical-align: middle;
+}
+.post-pagination .old-post a:hover,
+.post-pagination .new-post a:hover {
+	background-color: transparent !important;
+	color: inherit !important;
+}
+
+/* ===================================
+	14. Infinite Scroll
+====================================== */
+.post-pagination.post-infinite-scroll-pagination {
+	border: 0;
+	padding: 0;
+	margin: 0 auto;
+}
+.post-pagination.post-infinite-scroll-pagination .page-load-status {
+	margin: 70px 0 50px 0;
+	width: 100%;
+}
+.post-pagination.post-infinite-scroll-pagination .page-load-status .infinite-scroll-request {
+	width: 100%;
+	margin: 0;
+}
+.post-pagination.post-infinite-scroll-pagination .page-load-status .infinite-scroll-request img {
+	width: 40px;
+}
+
+/* ===================================
+	15. Load More
+====================================== */
+.post-pagination.crafto-post-load-more,
+.post-pagination.post-infinite-scroll-pagination.crafto-post-load-more .page-load-status {
+	margin: 0;
+	width: 100%;
+	border: 0;
+	display: block;
+	clear: both;
+	position: relative;
+}
+.post-pagination.post-infinite-scroll-pagination.crafto-post-load-more .page-load-status {
+	position: absolute;
+	bottom: 70px;
+	display: none;
+}
+.post-pagination.post-infinite-scroll-pagination.crafto-post-load-more .page-load-status img {
+	width: 30px;
+}
+.post-pagination.crafto-post-load-more .load-more-btn {
+	width: 100%;
+}
+.post-pagination.crafto-post-load-more .load-more-btn .btn,
+.post-pagination.crafto-post-load-more .load-more-btn .btn:hover,
+.post-pagination.crafto-post-load-more .load-more-btn .btn:focus {
+	font-size: 14px;
+	padding: 14px 27px;
+	transition: all .3s ease-in-out;
+	cursor: pointer;
+	margin-top: 60px;
+	border-radius: 4px;
+	font-weight: 500;
+	text-align: center;
+	opacity: 1;
+	background-color: var( --e-global-color-secondary, #232323 );
+	border-color: var( --e-global-color-secondary, #232323 );
+	color: #fff;
+	position: relative;
+}
+.post-pagination.crafto-post-load-more .load-more-btn .btn .page-load-status {
+	display: none;
+	clear: none;
+	margin: 0;
+	left: 0;
+	top: 50%;
+	bottom: 0;
+	right: 0;
+	padding: 0;
+	border: 0;
+	text-align: center;
+	transform: translateY(-50%);
+}
+.post-pagination.crafto-post-load-more .load-more-btn .btn span {
+	display: inline-block;
+}
+.post-pagination.crafto-post-load-more .load-more-btn .btn[disabled] span {
+	opacity: 0;
+}
+
+/* ===================================
+	16. Overlay
+====================================== */
+.bg-overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	opacity: .3;
+}
+
+/* ===================================
+	17. Social Icons
+====================================== */
+.default.social-icons-wrapper ul li a.elementor-icon i,
+.default.social-icons-wrapper ul li a.elementor-icon svg {
+	transition: all 0.3s ease-in-out;
+}
+.default.social-icons-wrapper ul li a.elementor-icon i + .social-icon-text,
+.default.social-icons-wrapper ul li a.elementor-icon svg + .social-icon-text {
+	margin-left: 7px;
+}
+.social-icons-wrapper ul {
+	margin-top: 0;
+}
+.social-icons-wrapper ul li {
+	vertical-align: top;
+	display: inline-block;
+}
+
+/* ===================================
+	18. Categories
+====================================== */
+.categories ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.categories ul li {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 15px;
+	line-height: 18px;
+}
+.categories ul li:last-child {
+	margin-bottom: 0;
+}
+.categories ul li a {
+	display: inline-block;
+	text-align: left;
+}
+.categories ul li a:hover {
+	color: #2946f3;
+}
+.categories ul li span {
+	font-size: 14px;
+	position: absolute;
+	top: 1px;
+	right: 0;
+	text-align: right;
+}
+
+/* ===================================
+	19. Tags
+====================================== */
+.tags ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.tags ul li {
+	position: relative;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+.tags ul li a {
+	display: inline-block;
+	text-align: center;
+	font-size: 13px;
+	line-height: 20px;
+	margin: 0 6px 10px 0;
+	padding: 7px 18px;
+	border-radius: 4px;
+	border: 1px solid #e4e4e4;
+}
+.tags ul li a:hover {
+	color: var( --e-global-color-secondary, #232323 );
+	box-shadow: 0 0 10px rgba(23, 23, 23, 0.1);
+	background-color: #fff;
+}
+
+/* ===================================
+	20. Tag Cloud
+====================================== */
+.tagcloud a {
+	display: inline-block;
+	text-align: center;
+	font-size: 13px !important;
+	line-height: 20px;
+	margin: 0 8px 10px 0;
+	padding: 6px 18px;
+	border-radius: 4px;
+	border: 1px solid #e4e4e4;
+}
+.tagcloud a:hover,
+.tagcloud a.active {
+	box-shadow: 0 0 10px rgba(23, 23, 23, .1);
+	color: #828282;
+}
+
+/* ===================================
+	21. Accessibility
+====================================== */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 1;
+}
+ul.wp-block-categories-list li a:hover,
+ul.wp-block-archives-list li a:hover,
+.blog-details-text a:hover,
+.blog-details-text th a:hover {
+	text-decoration: none;
+}
+pre {
+	display: block;
+	padding: 10px;
+	margin: 10px 0 30px;
+	font-size: 15px;
+	line-height: 32px;
+	color: var( --e-global-color-secondary, #232323 );
+	word-break: break-all;
+	word-wrap: break-word;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+hr.wp-block-separator {
+	border-bottom-width: 2px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+hr {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+code,
+a>code {
+	color: var( --e-global-color-secondary, #232323 );
+}
+
+/* ===================================
+	22. Single Post
+====================================== */
+.single-post-main-section .crafto_layout_no_sidebar_single .blog-image,
+.single-post-main-section .crafto_layout_right_sidebar_single .blog-image,
+.single-post-main-section .crafto_layout_left_sidebar_single .blog-image {
+	width: 100%;
+}
+.single-post-main-section .crafto_layout_no_sidebar_single .blog-image img,
+.single-post-main-section .crafto_layout_right_sidebar_single .blog-image img,
+.single-post-main-section .crafto_layout_left_sidebar_single .blog-image img {
+	border-radius: 6px;
+}
+.crafto_layout_no_sidebar_single .alignfull {
+	margin-bottom: 25px;
+}
+.single-post-main-section .single-post-title~.col-sm-12>div:first-child {
+	margin-top: 0;
+}
+body:not(.elementor-page) .crafto_layout_no_sidebar_single .crafto-content-full-part p:last-child img.alignright {
+	clear: both;
+}
+body.single:not(.elementor-default) .default-main-content-wrap {
+	margin-top: 71px;
+}
+body:not(.elementor-page) .crafto-content-full-part {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+body:not(.elementor-page) .crafto-page-main-section {
+	padding-top: 110px;
+	padding-bottom: 110px;
+}
+
+/* ===================================
+	23. Blocks Gallery Grid
+====================================== */
+body:not(.elementor-page) ul.blocks-gallery-grid,
+body:not(.elementor-page) ul.wp-block-gallery {
+	padding-left: 0;
+}
+
+/* ===================================
+	24. Loading
+====================================== */
+@keyframes spin {
+	to {
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+.loading:hover,
+.loading {
+	background-color: #fff !important;
+	position: relative;
+	border-color: transparent !important;
+	opacity: 1 !important;
+	transition: all 0s ease-in-out !important;
+}
+.loading::after,
+.crafto-loader:after,
+.crafto-loading .crafto-loader {
+	background: none;
+	content: "" !important;
+	position: absolute;
+	left: 50% !important;
+	top: 50% !important;
+	margin: -8px 0 0 -8px !important;
+	opacity: 1 !important;
+	right: inherit !important;
+	z-index: 9;
+	text-align: center;
+	border: 2px solid hsla(0, 0%, 0%, 0.4);
+	border-top-color: #000000;
+	border-radius: 50%;
+	width: 16px !important;
+	height: 16px !important;
+	animation: spin 1s linear infinite;
+	-webkit-animation: spin 1s linear infinite;
+}
+.loading:before {
+	position: absolute;
+	z-index: 9;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	content: "" !important;
+}
+.crafto-loading {
+	float: left;
+	width: 100%;
+	position: relative;
+}
+.crafto-loader {
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 9;
+}
+.crafto-loader:after {
+	border-radius: 50%;
+}
+
+/* ===================================
+	25. Section Animation
+====================================== */
+.crafto-page-layout,
+.footer-sticky,
+.footer-main-wrapper,
+.theme-demos,
+.hamburger-menu-wrapper,
+.site-header svg,
+.mini-header-main-wrapper svg,
+.crafto-cookie-policy-wrapper,
+.verticalbar-wrap,
+header .elementor-widget,
+header .elementor-widget-crafto-button {
+	visibility: hidden;
+	opacity: 0;
+}
+.crafto-theme-ready .crafto-page-layout,
+.crafto-theme-ready .footer-sticky,
+.crafto-theme-ready .footer-main-wrapper,
+.crafto-theme-ready .theme-demos,
+.crafto-theme-ready .hamburger-menu-wrapper,
+.crafto-theme-ready .site-header svg,
+.crafto-theme-ready .mini-header-main-wrapper svg,
+.crafto-theme-ready .crafto-cookie-policy-wrapper,
+.crafto-theme-ready .verticalbar-wrap,
+.crafto-theme-ready header .elementor-widget,
+.crafto-theme-ready header .elementor-widget-crafto-button {
+	visibility: visible;
+	opacity: 1;
+}
+body:not(.crafto-theme-ready) .crafto-page-layout,
+body:not(.crafto-theme-ready) .footer-sticky,
+body:not(.crafto-theme-ready) .footer-main-wrapper,
+body:not(.crafto-theme-ready) .theme-demos,
+body:not(.crafto-theme-ready) .hamburger-menu-wrapper,
+body:not(.crafto-theme-ready) .site-header svg,
+body:not(.crafto-theme-ready) .mini-header-main-wrapper svg,
+body:not(.crafto-theme-ready) .crafto-cookie-policy-wrapper,
+body:not(.crafto-theme-ready) .verticalbar-wrap,
+body:not(.crafto-theme-ready) header .elementor-widget,
+body:not(.crafto-theme-ready) header .elementor-widget-crafto-button {
+	transition: opacity 250ms ease-in, visibility 0ms ease-in 250ms;
+}

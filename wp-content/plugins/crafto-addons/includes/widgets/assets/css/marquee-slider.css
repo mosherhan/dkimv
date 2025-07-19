@@ -1,0 +1,45 @@
+/* ===================================
+	Marquee Slider
+====================================== */
+.marquee-slide {
+	-webkit-transition-timing-function: linear !important;
+	transition-timing-function: linear !important;
+	position: relative;
+}
+.marquee-slider .swiper-slider {
+	display: flex;
+	align-items: center;
+}
+.swiper-rtl.marquee-slider .swiper-slider {
+	direction: ltr;
+}
+.marquee-slide .text-stroke {
+	color: transparent;
+}
+.marquee-slider.feather-shadow {
+	mask-image: linear-gradient(to right,transparent 0,#000 20%,#000 80%,transparent 100%);
+	-webkit-mask-image: linear-gradient(to right,transparent 0,#000 20%,#000 80%,transparent 100%);
+}
+.marquee-slider i,
+.marquee-slider svg {
+	margin-right: 15px;
+}
+.marquee-slider svg {
+	width: 30px;
+}
+.marquee-slider .title {
+	margin: 0;
+}
+.marquee-slider .title .title-highlights {
+	border-bottom: 2px solid;
+	display: inline-block;
+}
+.marquee-slider .title .marquee-slide-separator {
+	border: 2px solid #e4e4e4;
+	border-radius: 100%;
+	width: 10px;
+	height: 10px;
+	margin:-5px 25px 0;
+	display: inline-block;
+	vertical-align: middle;
+}

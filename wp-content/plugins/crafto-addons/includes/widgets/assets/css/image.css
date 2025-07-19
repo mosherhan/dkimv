@@ -1,0 +1,52 @@
+/* ===================================
+	Image
+====================================== */
+.elementor-widget-crafto-image .crafto-image-wrapper a {
+	display: block;
+}
+
+/* Parallax Liquid */
+.crafto-image-wrapper .image-box.reveal-effect,
+.crafto-image-wrapper .liquid-parallax-box {
+	display: inline-block;
+}
+.crafto-image-wrapper a .liquid-parallax-box {
+	width: 100%;
+}
+.crafto-image-wrapper .image-box.reveal-effect {
+	width: 100%;
+}
+.crafto-image-wrapper .shadow-in {
+	box-shadow: 0 20px 100px 0 rgba(0, 0, 0, 0.1);
+}
+[data-shadow-animation].shadow-in img {
+	opacity: 1;
+	transition-delay: .35s;
+}
+[data-shadow-animation] img {
+	opacity: 0;
+	transition: opacity .65s cubic-bezier(.5,1,.5,1);
+}
+.liquid-parallax-box {
+	overflow: hidden;
+	position: relative;
+}
+.liquid-parallax-box .liquid-parallax {
+	will-change: transform;
+	transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+	transform: translateY(0) scale(1.201);
+	position: relative;
+}
+.crafto-image-wrapper .atropos img {
+	border-radius: 6px 6px 6px 6px;
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+/* Responsive CSS Here */
+@media (max-width: 1024px) {
+	.liquid-parallax-box .liquid-parallax {
+		top: 0;
+	}
+}

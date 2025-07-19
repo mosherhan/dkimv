@@ -1,0 +1,168 @@
+/* ===================================
+	Side Icon
+====================================== */
+.theme-demos-active {
+	overflow: inherit;
+}
+.theme-demos {
+	display: none;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	position: fixed;
+	background-color: #fff;
+	right: -100%;
+	top: 0;
+	z-index: 10501;
+	opacity: 1 !important;
+	transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.theme-demos .theme-demos-main {
+	height: 100%;
+	min-height: 100%;
+	position: relative;
+	z-index: 11;
+	padding: 0;
+	width: 100%;
+	overflow-y: scroll;
+}
+.theme-demos .demos-wrapper {
+	width: 100%;
+}
+.theme-demos .demos-wrapper .demos-wrapper-inner {
+	padding: 60px 50px;
+}
+.theme-demos.active {
+	transform: translateX(-100%);
+	box-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.25);
+}
+.theme-demos .demo-button-wrapper {
+	width: auto;
+	white-space: nowrap;
+	position: absolute;
+	right: 100%;
+	bottom: 250px;
+	cursor: pointer;
+	z-index: 10;
+	transform: rotate(-90deg) translateY(-100%);
+	transform-origin: 100% 0 0;
+	margin-right: -1px;
+	display: flex;
+}
+.theme-demos .buy-theme a,
+.theme-demos .all-demo .demo-link {
+	color: #232323;
+	font-size: 11px;
+	padding: 15px;
+	display: block;
+	text-decoration: none;
+	font-weight: 500;
+}
+.theme-demos .buy-theme a img {
+	width: 22px;
+	height: 22px;
+	max-width: unset;
+	display: block;
+}
+.theme-demos .buy-theme a > i,
+.theme-demos .all-demo .demo-link > i {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 59px;
+	line-height: 55px;
+	text-align: center;
+	opacity: 0;
+	font-size: 24px;
+	transition-delay: 0.3s;
+}
+.theme-demos .all-demo {
+	background-color: #1f242e;
+}
+.theme-demos .all-demo .theme-wrapper {
+	padding: 0 9px;
+	position: relative;
+	top: 0;
+	opacity: 1;
+	transition-delay: 0.3s;
+	line-height: 0;
+}
+.theme-demos .all-demo .theme-wrapper > div {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 15px;
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height: 21px;
+}
+.theme-demos .buy-theme {
+	text-align: center;
+	background-color: #48a133;
+	position: relative;
+	z-index: 1;
+}
+.theme-demos .buy-theme .theme-wrapper {
+	padding: 0;
+	position: relative;
+	top: 0;
+	opacity: 1;
+	transition-delay: 0.3s;
+	line-height: 0;
+}
+.theme-demos .buy-theme .theme-wrapper span {
+	font-size: 15px;
+	font-weight: 600;
+	margin-right: 0;
+}
+.theme-demos .buy-theme .theme-wrapper i {
+	margin-right: 10px;
+	font-size: 21px;
+}
+.theme-demos .buy-theme .theme-wrapper > div svg {
+	margin: 0;
+}
+.theme-demos .clearfix {
+	clear: both;
+}
+.theme-demos .portfolio-wrapper .grid-item {
+	flex: 0 0 auto;
+}
+.admin-bar .theme-demos .close-popup {
+	top: 40px;
+	right: 20px;
+}
+.theme-demos .close-popup {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 99;
+	font-size: 22px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+	transform-origin: 50% 50%;
+	height: 40px;
+	width: 40px;
+	color: #232323;
+}
+.theme-demos .close-popup svg {
+	width: 16px;
+}
+.theme-demos .close-popup:hover {
+	transform: rotate(-180deg);
+}
+.show-search-popup .theme-demos .theme-demos,
+.show-search-popup .show-menu .theme-demos {
+	z-index: 1;
+}
+
+/* Responsive CSS Here */
+@media (max-width:1199px) {
+.theme-demos {
+	display: none !important;
+}
+}

@@ -1,0 +1,112 @@
+/* ===================================
+	Magic Cursor
+====================================== */
+.magic-cursor {
+	cursor: none;
+}
+.magic-cursor-wrapper {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 30px;
+	height: 30px;
+	pointer-events: none;
+	z-index: 10000;
+	transition: opacity 0.2s ease-in-out 0.2s;
+}
+#ball-cursor {
+	position: fixed;
+	width: 140px;
+	height: 140px;
+	border: 0;
+	background-color: var( --e-global-color-secondary, #232323 );
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+	border-radius: 100%;
+	opacity: 0;
+	overflow: hidden;
+	transition: opacity 0.3s ease-in-out 0.1s;
+	text-align: center;
+}
+.magic-cursor-icon #ball-cursor {
+	width: 70px;
+	height: 70px;
+}
+.magic-cursor-icon.magic-cursor-wrapper #ball-cursor:before,
+.magic-cursor-icon.magic-cursor-wrapper #ball-cursor:after {
+	font-size: 20px;
+}
+.magic-cursor-wrapper #ball-cursor:before,
+.magic-cursor-wrapper #ball-cursor:after {
+	content: "\e843";
+	font-family: feather;
+	color: #fff;
+	font-size: 13px;
+	position: absolute;
+	left: 15%;
+	top: 50%;
+	transform: translateY(-50%);
+	font-weight: 500;
+}
+.magic-cursor-wrapper #ball-cursor:after {
+	content: "\e844";
+	right: 15%;
+	left: auto;
+}
+.magic-cursor-wrapper.sliderhover #ball-cursor {
+	opacity: 1;
+}
+.magic-cursor-wrapper.magic-cursor-label #ball-cursor:before { 
+	font-family: inherit;
+	left: 0;
+	width: 84%;
+	font-size: 14px;
+	font-weight: 600;
+	word-spacing: 4px;
+	margin: 0 auto;
+	line-height: normal;
+	left: 0;
+	right: 0;
+	content: "";
+}
+.magic-cursor-wrapper.magic-round-cursor #ball-cursor {
+	backdrop-filter: blur(6px);
+	background-color: rgba(0, 0, 0, .2);
+	width: 220px;
+	height: 220px;
+	box-shadow: none;
+}
+.magic-cursor-wrapper.magic-cursor-label #ball-cursor:after,
+.magic-cursor-wrapper.magic-round-cursor #ball-cursor:before,
+.magic-cursor-wrapper.magic-round-cursor #ball-cursor:after {
+	display: none;
+}
+
+/* Magic Cursor Images */
+.magic-cursor-wrapper .magic-cursor-img-set:before,
+.magic-cursor-wrapper .magic-cursor-img-set:after {
+	display: none;
+}
+.magic-cursor-wrapper .magic-cursor-img-set {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.magic-cursor-wrapper .magic-cursor-img-set svg {
+    fill: #fff;
+	height: auto;
+	width: 50px;
+}
+.magic-cursor-wrapper .magic-cursor-img-set img {
+	width: 50px;
+}
+.magic-cursor-wrapper .magic-cursor-img-set .magic-cursor-image {
+	display: flex;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+@media (hover: none) {
+	.magic-cursor-wrapper {
+		display: none;
+	}
+}

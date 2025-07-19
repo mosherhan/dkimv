@@ -1,0 +1,39 @@
+/* ===================================
+	Particle Effect
+====================================== */
+.elementor-widget-crafto-particle-effect {
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.elementor-widget-crafto-particle-effect .elementor-widget-container {
+	height: 100%;
+	width: 100%;
+}
+.visible-on-column-hover {
+	opacity: 0;
+	transition: opacity .3s;
+}
+.elementor-widget-crafto-particle-effect:hover > .elementor-widget-container .visible-on-column-hover {
+	opacity: 1;
+}
+.lqd-particles-bg-wrap.lqd-overlay,
+.crafto-particles-container,
+.lqd-particles-bg-wrap.lqd-overlay .lqd-overlay,
+.particles-as-bg.particles-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.lqd-particles-bg-wrap.lqd-overlay canvas {
+	display: inline-block;
+	vertical-align: baseline;
+}
+.crafto-particles-container {
+	position: relative;
+	width: 100%;
+}

@@ -1,0 +1,85 @@
+/* ===================================
+	3D Parallax
+====================================== */
+/* 3D Parallax Style 01 */
+.three-d-parallax-hover-1 .atropos {
+	position: relative;
+}
+.three-d-parallax-hover-1 .atropos-inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.three-d-parallax-hover-1 .atropos-inner > div {
+	position: absolute;
+	z-index: 9;
+}
+.three-d-parallax-hover-1 .image-layer-1 {
+	position: relative;
+	z-index: 9;
+}
+
+/* 3D Parallax Style 02 */
+.three-d-parallax-hover-2 .three-d-parallax-hover {
+	position: relative;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+.three-d-parallax-hover-2 .first-title {
+	font-size: 17.188rem;
+	line-height: 17.188rem;
+	letter-spacing: -5px;
+	font-weight: 500;
+	color: var( --e-global-color-secondary, #232323 );
+}
+.three-d-parallax-hover-2 .second-title {
+	z-index: 9;
+	text-align: center;
+	width: 100%;
+	display: block;
+	font-size: 12.5rem;
+	line-height: 12.5rem;
+	letter-spacing: -5px;
+	font-weight: 600;
+	white-space: nowrap;
+}
+.three-d-parallax-hover-2 .second-offset {
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 100%;
+	display: block;
+}
+
+/* Responsive CSS here */
+@media (max-width: 1199px) {
+	.three-d-parallax-hover-2 .first-title {
+		font-size: 12.5rem;
+		line-height: 12.5rem;
+		letter-spacing: -5px;
+	}
+}
+
+@media (max-width: 991px) {
+	.three-d-parallax-hover-2 .second-title {
+		font-size: 10.625rem;
+		line-height: 10.625rem;
+	}
+}
+
+@media (max-width: 767px) {
+	.three-d-parallax-hover-2 .first-title {
+		font-size: 8.75rem;
+		line-height: 8.75rem;
+	}
+}
+
+@media (max-width: 575px) {
+	.three-d-parallax-hover-2 .second-title {
+		font-size: 6.875rem;
+		line-height: 6.875rem;
+	}
+}
